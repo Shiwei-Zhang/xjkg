@@ -31,7 +31,7 @@ html,body,.box{width:100%;height:100%;padding:0;margin:0;overflow:hidden}
 ::-webkit-scrollbar-thumb{border-radius:5px;-webkit-box-shadow:inset 0 0 5px #0cc3ec;background:#0cc3ec}
 ::-webkit-scrollbar-thumb:hover{border-radius:5px;-webkit-box-shadow:inset 0 0 5px #0cc3ec;background:#0cc3ec}
 .boxRunState{height:8.8rem;width:18rem}
-.boxRunState .leftBox{width:4.27rem;height:8rem;padding-top:.6rem;overflow:hidden;float:left}
+.boxRunState .leftBox{width:4.27rem;height:6rem;padding-top:2rem;overflow:hidden;float:left}
 .boxRunState .leftBox .dList{width:4.26rem;height:.94rem;margin:.25rem 0;position:relative;cursor:pointer}
 .boxRunState .leftBox .dList:nth-child(1){background:url(../../img/runStateImg/a.png) no-repeat;background-size:100% 100%}
 .boxRunState .leftBox .dList:nth-child(1).on{background:url(../../img/runStateImg/a-on.png);background-size:100% 100%}

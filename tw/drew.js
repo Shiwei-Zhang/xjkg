@@ -58,6 +58,7 @@
 			var reList0 = [];
 			var reList1 = [];
 			var reList2 = [];
+			var fxObj = {};
 			var geoCoord = null;
 
 			function getGeoCoord(name) {
@@ -203,7 +204,10 @@
 											'</div>' +
 											obj.series.markLine.data[obj.dataIndex][1].massage[1].massage + '<br>' +
 
-											'繁忙程度' + '：' + obj.series.markLine.data[obj.dataIndex][1].massage[1].fmd + '<br>';
+											'繁忙程度' + '：' + obj.series.markLine.data[obj.dataIndex][1].massage[1].fmd + '<br>'+
+											obj.series.markLine.data[obj.dataIndex][1].massage[1].massagefx + '<br>' +
+
+											'繁忙程度' + '：' + obj.series.markLine.data[obj.dataIndex][1].massage[1].fmdfx + '<br>';
 									}
 								},
 								smooth: true,
@@ -259,7 +263,10 @@
 											'</div>' +
 											obj.series.markLine.data[obj.dataIndex][1].massage[1].massage + '<br>' +
 
-											'繁忙程度' + '：' + obj.series.markLine.data[obj.dataIndex][1].massage[1].fmd + '<br>';
+											'繁忙程度' + '：' + obj.series.markLine.data[obj.dataIndex][1].massage[1].fmd + '<br>'+
+											obj.series.markLine.data[obj.dataIndex][1].massage[1].massagefx + '<br>' +
+
+											'繁忙程度' + '：' + obj.series.markLine.data[obj.dataIndex][1].massage[1].fmdfx + '<br>';
 									}
 								},
 								smooth: true,
@@ -313,7 +320,10 @@
 											'</div>' +
 											obj.series.markLine.data[obj.dataIndex][1].massage[1].massage + '<br>' +
 
-											'繁忙程度' + '：' + obj.series.markLine.data[obj.dataIndex][1].massage[1].fmd + '<br>';
+											'繁忙程度' + '：' + obj.series.markLine.data[obj.dataIndex][1].massage[1].fmd + '<br>'+
+											obj.series.markLine.data[obj.dataIndex][1].massage[1].massagefx + '<br>' +
+
+											'繁忙程度' + '：' + obj.series.markLine.data[obj.dataIndex][1].massage[1].fmdfx + '<br>';
 									}
 								},
 								smooth: true,
@@ -365,16 +375,16 @@
 						//								geoCoord: getGeoCoord(line[1].name)
 						//							}]
 						//						});
-						//						for(var j = 0; j < data.data.segmentList.length; j++) {
-						//							pointdata.push(data.data.segmentList[j][0]);
-						//							pointdata.push(data.data.segmentList[j][1]);
-						//						}
-						//						option.series[1].markPoint.data = pointdata.map(function(point) {
-						//							return {
-						//								name: point.name,
-						//								geoCoord: getGeoCoord(point.name)
-						//							}
-						//						});
+						for(var j = 0; j < data.data.segmentList.length; j++) {
+							pointdata.push(data.data.segmentList[j][0]);
+							pointdata.push(data.data.segmentList[j][1]);
+						}
+						option.series[1].markPoint.data = pointdata.map(function(point) {
+							return {
+								name: point.name,
+								geoCoord: getGeoCoord(point.name)
+							}
+						});
 						var jsonData = {
 								"size": "-1",
 								"dateTime": ctime,
@@ -393,54 +403,119 @@
 
 								var getData = JSON.parse(data);
 								console.log(getData);
-
+								for(var k = 0; k < getData.data.segmentList.length; k++) {
+									var xbfx = getData.data.segmentList[k][0].name + getData.data.segmentList[k][1].name;
+									fxObj[xbfx] = getData.data.segmentList[k][1].value;
+								}
 								for(var k = 0; k < getData.data.segmentList.length; k++) {
 
-									//									if(getData.data.segmentList[k][1].value == 0.0) {
-									//										var reList1Obj = [{
-									//											"name": getData.data.segmentList[k][0].name
-									//										}, {
-									//											"name": getData.data.segmentList[k][1].name
-									//										}]
-									//										reList1.push(reList1Obj);
-									//									} else {
-									//										var reList1Obj = [{
-									//											"name": getData.data.segmentList[k][0].name
-									//										}, {
-									//											"name": getData.data.segmentList[k][1].name
-									//										}]
-									//										reList2.push(reList1Obj);
-									//									}
-
 									if(getData.data.segmentList[k][1].value >= 0.0 && getData.data.segmentList[k][1].value < 0.1) {
-										var reList1Obj = [{
-											"name": getData.data.segmentList[k][0].name
-										}, {
-											"name": getData.data.segmentList[k][1].name,
-											'massage': getData.data.segmentList[k][0].name + '→' + getData.data.segmentList[k][1].name,
-											'fmd': getData.data.segmentList[k][1].value
-										}]
-										reList1.push(reList1Obj);
+										var fxcsstring = getData.data.segmentList[k][1].name + getData.data.segmentList[k][0].name;
+										if(fxObj[fxcsstring] !== undefined) {
+											var fxValue = fxObj[fxcsstring];
+											var reList1Obj = [{
+												"name": getData.data.segmentList[k][0].name
+											}, {
+												"name": getData.data.segmentList[k][1].name,
+												'massage': getData.data.segmentList[k][0].name + '→' + getData.data.segmentList[k][1].name,
+												'fmd': getData.data.segmentList[k][1].value,
+												'massagefx': getData.data.segmentList[k][1].name + '→' + getData.data.segmentList[k][0].name,
+												'fmdfx': fxValue,
+											}]
+											reList1.push(reList1Obj);
+
+										} else {
+											var reList1Obj = [{
+												"name": getData.data.segmentList[k][0].name
+											}, {
+												"name": getData.data.segmentList[k][1].name,
+												'massage': getData.data.segmentList[k][0].name + '→' + getData.data.segmentList[k][1].name,
+												'fmd': getData.data.segmentList[k][1].value,
+												'massagefx': getData.data.segmentList[k][1].name + '→' + getData.data.segmentList[k][0].name,
+												'fmdfx': '暂无数据',
+											}]
+											reList1.push(reList1Obj);
+										}
 
 									} else if(getData.data.segmentList[k][1].value >= 0.1 && getData.data.segmentList[k][1].value < 0.8) {
-										var reList0Obj = [{
-											"name": getData.data.segmentList[k][0].name
-										}, {
-											"name": getData.data.segmentList[k][1].name,
-											'massage': getData.data.segmentList[k][0].name + '→' + getData.data.segmentList[k][1].name,
-											'fmd': getData.data.segmentList[k][1].value
-										}]
-										reList0.push(reList0Obj);
+										
+										var fxcsstring = getData.data.segmentList[k][1].name + getData.data.segmentList[k][0].name;
+										if(fxObj[fxcsstring] !== undefined) {
+											var fxValue = fxObj[fxcsstring];
+											var reList0Obj = [{
+												"name": getData.data.segmentList[k][0].name
+											}, {
+												"name": getData.data.segmentList[k][1].name,
+												'massage': getData.data.segmentList[k][0].name + '→' + getData.data.segmentList[k][1].name,
+												'massagefx': getData.data.segmentList[k][1].name + '→' + getData.data.segmentList[k][0].name,
+												'fmd': getData.data.segmentList[k][1].value,
+												'fmdfx': fxValue,
+											}]
+											reList0.push(reList0Obj);
+
+										} else {
+											var reList0Obj = [{
+												"name": getData.data.segmentList[k][0].name
+											}, {
+												"name": getData.data.segmentList[k][1].name,
+												'massage': getData.data.segmentList[k][0].name + '→' + getData.data.segmentList[k][1].name,
+												'massagefx': getData.data.segmentList[k][1].name + '→' + getData.data.segmentList[k][0].name,
+												'fmd': getData.data.segmentList[k][1].value,
+												'fmdfx': '暂无数据',
+											}]
+											reList0.push(reList0Obj);
+										}
+
+	
+//										
+//										var reList0Obj = [{
+//											"name": getData.data.segmentList[k][0].name
+//										}, {
+//											"name": getData.data.segmentList[k][1].name,
+//											'massage': getData.data.segmentList[k][0].name + '→' + getData.data.segmentList[k][1].name,
+//											'fmd': getData.data.segmentList[k][1].value
+//										}]
+//										reList0.push(reList0Obj);
 
 									} else if(getData.data.segmentList[k][1].value >= 0.8) {
-										var reList1Obj = [{
-											"name": getData.data.segmentList[k][0].name
-										}, {
-											"name": getData.data.segmentList[k][1].name,
-											'massage': getData.data.segmentList[k][0].name + '→' + getData.data.segmentList[k][1].name,
-											'fmd': getData.data.segmentList[k][1].value
-										}]
-										reList2.push(reList1Obj);
+										
+										var fxcsstring = getData.data.segmentList[k][1].name + getData.data.segmentList[k][0].name;
+										if(fxObj[fxcsstring] !== undefined) {
+											var fxValue = fxObj[fxcsstring];
+											var reList1Obj = [{
+												"name": getData.data.segmentList[k][0].name
+											}, {
+												"name": getData.data.segmentList[k][1].name,
+												'massage': getData.data.segmentList[k][0].name + '→' + getData.data.segmentList[k][1].name,
+												'massagefx': getData.data.segmentList[k][1].name + '→' + getData.data.segmentList[k][0].name,
+												'fmd': getData.data.segmentList[k][1].value,
+												'fmdfx': fxValue,
+											}]
+											reList2.push(reList1Obj);
+
+										} else {
+											var reList1Obj = [{
+												"name": getData.data.segmentList[k][0].name
+											}, {
+												"name": getData.data.segmentList[k][1].name,
+												'massage': getData.data.segmentList[k][0].name + '→' + getData.data.segmentList[k][1].name,
+												'massagefx': getData.data.segmentList[k][1].name + '→' + getData.data.segmentList[k][0].name,
+												'fmd': getData.data.segmentList[k][1].value,
+												'fmdfx': '暂无数据',
+											}]
+											reList2.push(reList1Obj);
+										}
+
+//										var reList1Obj = [{
+//											"name": getData.data.segmentList[k][0].name
+//										}, {
+//											"name": getData.data.segmentList[k][1].name,
+//											'massage': getData.data.segmentList[k][0].name + '→' + getData.data.segmentList[k][1].name,
+//											'fmd': getData.data.segmentList[k][1].value
+//										}]
+//										reList2.push(reList1Obj);
+										
+										
 
 									}
 
@@ -631,13 +706,13 @@
 					var offM = Math.floor(myoffsetSecond / 60);
 					var offS = offsetSecond % 60
 				}
-				
+
 				if(offM < 10) {
-				   offM = '0' + offM;
-			    }
-			    if(offS < 10) {
-				    offS = '0' + offS;
-			    }
+					offM = '0' + offM;
+				}
+				if(offS < 10) {
+					offS = '0' + offS;
+				}
 				if(myoffsetRem > 5) {
 					var pylstring = offH + ':' + offM + ':' + offS;
 				} else {
@@ -685,9 +760,8 @@
 				// TODO: echarts重新渲染操作
 
 				drewAll(finalTime)
-			
-			
-			if(this.releaseCapture) {
+
+				if(this.releaseCapture) {
 					this.releaseCapture();
 					this.onmousemove = null;
 					this.onmouseup = null;

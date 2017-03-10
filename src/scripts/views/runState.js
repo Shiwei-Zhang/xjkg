@@ -1,12 +1,9 @@
 var $ = require('../utils/jquery-3.1.1.min.js');
 var common = require('../utils/common.util.js');
 var template = require('../utils/template.js');
-var IScroll = require('../utils/iscroll-5.1.3.min');
-var echartsMyself = require('../utils/echartsMyself.js');
 var runStateBody = require('../tpls/runState/runStateBody.string');
 var runStateLeft = require('../tpls/runState/runStateLeft.string');
 var templates = require('../tpls/runState/runStateTemplates.string');
-//var runStateRight = require('../tpls/runState/runStateRight.string');
 require('../utils/scrolling.js');
 $(function () {
     common.renderBody($('body'), runStateBody);
@@ -3862,12 +3859,16 @@ $(function () {
 
     //10秒刷新一次
     clearInterval(timer);
+    var timeLeft;
     var timer=setInterval(function () {
         clockFormat(new Date());
         //createDom();
-        var timeLeft=(timeArr.h* 400 + timeArr.min * (400 / 60)+timeArr.s * (400 / 360)) / 100 + 'rem';
+        timeLeft=(timeArr.h* 400 + timeArr.min * (400 / 60)+timeArr.s * (400 / 360)) / 100 + 'rem';
         $('#timeNow').css('left',timeLeft)
     },5000);
+
+
+
 
     //航班号数据
     var dataList=getdata2(airData);

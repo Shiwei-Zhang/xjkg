@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 59
-/svn/tarot/!svn/ver/1362/XJDemo/zwa/src/main/webapp/xjkg/tw
+/svn/tarot/!svn/ver/1374/XJDemo/zwa/src/main/webapp/xjkg/tw
 END
 daterangepicker.js
 K 25
@@ -14,6 +14,12 @@ K 25
 svn:wc:ra_dav:version-url
 V 68
 /svn/tarot/!svn/ver/1335/XJDemo/zwa/src/main/webapp/xjkg/tw/test.css
+END
+scrolling.js
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/tarot/!svn/ver/1374/XJDemo/zwa/src/main/webapp/xjkg/tw/scrolling.js
 END
 rl.js
 K 25
@@ -55,7 +61,7 @@ drew.js
 K 25
 svn:wc:ra_dav:version-url
 V 67
-/svn/tarot/!svn/ver/1362/XJDemo/zwa/src/main/webapp/xjkg/tw/drew.js
+/svn/tarot/!svn/ver/1375/XJDemo/zwa/src/main/webapp/xjkg/tw/drew.js
 END
 sp.js
 K 25

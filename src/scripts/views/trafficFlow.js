@@ -15,6 +15,7 @@ $(function() {
 	var $tableT = $('.table_title');
 	var SectorCountData = [];
 	var SegmentCount = [];
+	
 
 	function updata() {
 		//alert('updatas')
@@ -71,8 +72,8 @@ $(function() {
 			data: jsonDatab,
 			contentType: "application/x-www-form-urlencoded;",
 			success: function(data) {
-                console.log(jsonDatab)
-                console.log(data)
+				console.log(jsonDatab)
+				console.log(data)
 				var html1 = template('tableBoxTpl1', data);
 				document.getElementById('tableBox1').innerHTML = html1;
 
@@ -130,7 +131,7 @@ $(function() {
 
 	var timerb;
 	clearInterval(timerb);
-	timerb = setInterval(function(){
+	timerb = setInterval(function() {
 		updata();
 	}, 5000)
 

@@ -146,9 +146,9 @@ body {
         }
         .w1 {
             width: 2rem;
+            margin-right: 0.53rem;
         }
         .w2 {
-            width: 2.4rem;
             margin-right: 0.53rem;
         }
         .w3 {
