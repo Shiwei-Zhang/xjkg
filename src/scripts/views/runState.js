@@ -3869,18 +3869,6 @@ $(function () {
         $('#timeNow').css('left',timeLeft)
     },5000);
 
-    /*$('.gtt').addClass('scrollContainer');
-     var myScroll = new IScroll('.scrollContainer', {
-     scrollbars: true,
-     fadeScrollbars: true,
-     mouseWheel: true,
-     bounce: true,
-     click: true
-     });*/
-
-
-
-
     //航班号数据
     var dataList=getdata2(airData);
     /*var dataL = {
