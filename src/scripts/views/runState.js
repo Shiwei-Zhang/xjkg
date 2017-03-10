@@ -3917,5 +3917,9 @@ $(function () {
         $('#tableTpl2').css('top',moveH);
 
     });
+    /*$('.clBtn').click=function () {
+
+    }
+    $('.clBtn').click();*/
 
 });

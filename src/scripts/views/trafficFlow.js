@@ -133,6 +133,6 @@ $(function() {
 	clearInterval(timerb);
 	timerb = setInterval(function() {
 		updata();
-	}, 5000)
+	}, 2000)
 
 })

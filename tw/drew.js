@@ -184,7 +184,7 @@
 
 							markLine: {
 								effect: {
-									color: 'rgba(204, 246, 255, 0.05)', //三色
+									color: 'rgba(14, 246, 96, 0.05)', //三色
 									show: true,
 									period: 40
 								},

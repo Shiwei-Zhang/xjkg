@@ -10,3 +10,4 @@
 <a href="runState.html"><div class="dList on">
 	<span>运行动态</span>
 </div></a>
+<a href="#timeNow" class="clBtn" style="display: inline-block; width: 10px;height: 10px;background-color: red"></a>
