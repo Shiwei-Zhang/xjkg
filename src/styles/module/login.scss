@@ -1,0 +1,179 @@
+.loginEarth {
+    width: 8.6rem;
+    height: 8.6rem;
+    background-image: url("../../img/loginImg/earth.png");
+    background-size: 100% 100%;
+}
+.earthA {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    animation: loginMap 19s;
+    -webkit-animation: loginMap 19s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+}
+.loginForm {
+    width: 7.09rem;
+    height: 3.93rem;
+    background: url("../../img/loginImg/loginCenterImg.png");
+    background-size: 100% 100%;
+    h1 {
+        width: 6.27rem;
+        height: 0.34rem;
+        background: url("../../img/loginImg/loginTitle.png");
+        background-size: 100% 100%;
+        position: absolute;
+        left: 0.41rem;
+        top: -1.95rem;
+    }
+    form {
+        width: 4.1rem;
+        height: 2.3rem;
+        font-size: 0.14rem;
+        overflow: hidden;
+        div {
+            width: 100%;
+            height: 0.36rem;
+            border-bottom: 0.02rem solid #047ead;
+            overflow: hidden;
+            margin-top: 0.28rem;
+        }
+        span {
+            width: 0.4rem;
+        }
+        span,
+        input {
+            float: left;
+            height: 0.39rem;
+        }
+        input {
+            font-size: 0.14rem!important;
+            width: 3.6rem;
+            border: 0;
+            background: none;
+            color: #32cefe;
+            outline: none;
+            &:focus {
+                outline: none;
+                color: rgba(255,255,255,.75);
+                border-color: rgba(255,255,255,.75);
+            }
+            &.keyup {
+                color: white;
+                border-color: white;
+                text-shadow: 0 0 0.125em white;
+                box-shadow: 0 0 0.25em white,inset 0 0 0.25em white;
+            }
+        }
+        input::-webkit-input-placeholder {
+            /* WebKit browsers */
+            color: #31cefe;
+        }
+        input:-moz-placeholder {
+            /* Mozilla Firefox 4 to 18 */
+            color: #31cefe;
+            opacity: 1;
+        }
+        input::-moz-placeholder {
+            /* Mozilla Firefox 19+ */
+            color: #31cefe;
+            opacity: 1;
+        }
+        input:-ms-input-placeholder {
+            /* Internet Explorer 10+ */
+            color: #31cefe;
+        }
+        input::input-placeholder {
+            color: #31cefe;
+        }
+        .userNameImg {
+            background: url("../../img/loginImg/userLogin.png") no-repeat;
+            background-size: 100% 100%;
+        }
+        .pawImg {
+            background: url("../../img/loginImg/pawLogin.png") no-repeat;
+            background-size: 100% 100%;
+        }
+        .wjmm {
+            border: 0;
+            height: 0.3rem;
+            margin-top: 0.05rem;
+            a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                font-size: 0.12rem!important;
+                text-align: right;
+                text-decoration: none;
+                color: #709db3;
+                line-height: 0.3rem;
+            }
+        }
+        .loginBtn {
+            width: 4rem;
+            height: 0.45rem;
+            background-color: rgba(5,189,230,0.5);
+            border: 0.01rem solid #079cc4;
+            border-radius: 0.10rem;
+            overflow: hidden;
+            margin: 0.12rem auto;
+            a {
+                display: block;
+                width: 100%;
+                height: 0.41rem;
+                font-size: 0.2rem;
+                line-height: 0.4rem;
+                color: #fff;
+                text-align: center;
+                text-decoration: none;
+            }
+        }
+    }
+}
+canvas {
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    pointer-events:none;
+}
+.showSqure {
+    background: url("../../img/loginImg/loginBg31.png");
+    background-size: 100% 100%;
+}
+.lC {
+    width: 0.71rem;
+    height: 4.51rem;
+    background: url("../../img/loginImg/loginLeft.png");
+    background-size: 100% 100%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+}
+.rC {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 0;
+    width: 0.71rem;
+    height: 4.51rem;
+    background: url("../../img/loginImg/loginRight.png");
+    background-size: 100% 100%;
+}

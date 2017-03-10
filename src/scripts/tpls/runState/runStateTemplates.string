@@ -1,0 +1,9 @@
+<script id="tpl-data" type="text/html">
+        {{each list as value i}}
+        <ul>
+            <li>{{value[0]}}</li>
+            <li>{{value[1]}}</li>
+            <li>{{value[2]}}</li>
+        </ul>
+        {{/each}}
+</script>

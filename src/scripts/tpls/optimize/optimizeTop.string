@@ -1,0 +1,8 @@
+<li class="w1">航班起飞排序</li>
+<li class="w2"></li>
+<li class="w3">未起飞：<span id="unfly">312</span>架次</li>
+<li class="w4">已起飞：<span id="fly">122</span>架次</li>
+<li class="w5">已落地：<span id="land"></span>87架次</li>
+<li class="w6">共计航班：<span id="total">436</span>架次</li>
+<li class="w7">停机位 已占用：<span id="park">62</span>个</li>
+<li class="w8">未占用：<span id="unuse">75</span>个</li>

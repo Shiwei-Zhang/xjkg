@@ -1,0 +1,42 @@
+.leftBox {
+    left: -4.398rem;
+    .lbx1 {
+        right: 0.65rem;
+        top: 0.041rem;
+    }
+    .lbx2 {
+        right: 2.5rem;
+        top: 1.12rem;
+    }
+    .lbx3 {
+        right: 2.5rem;
+        top: 3.23rem;
+    }
+    .lbx4 {
+        right: 0.65rem;
+        top: 4.25rem;
+    }
+    
+    .fblbx1 {
+        right: 0;
+        top: 0.025rem;
+    }
+    .fblbx2 {
+        top: 1.11rem;
+        left: 0.055rem;
+    }
+    .fblbx3 {
+        top: 3.21rem;
+        left: 0.06rem;
+    }
+    .fblbx4 {
+        right: 0;
+        top: 4.225rem;
+    }
+    .iconLeft {
+        position: absolute;
+        top: 2.6rem;
+        right: 1.7rem;
+    }
+}
+

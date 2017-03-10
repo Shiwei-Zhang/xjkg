@@ -1,0 +1,472 @@
+ul li {
+  list-style: none;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Microsoft YaHei';
+}
+
+html,
+body,
+.box {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.box {
+  background-color: #0d152f;
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.bgnoneBox {
+  background-image: none;
+}
+
+.boxDelayAndTraffic {
+  height: 9.8rem;
+  width: 18rem;
+  overflow: hidden;
+}
+
+.boxDelayAndTraffic .topBox {
+  height: 6.274rem;
+  width: 100%;
+}
+
+.boxDelayAndTraffic .bottomBox {
+  height: 3.526rem;
+  width: 100%;
+}
+
+.boxDelayAndTraffic .topLeft {
+  width: 4.26rem;
+  height: 100%;
+  overflow: hidden;
+  float: left;
+}
+
+.boxDelayAndTraffic .topLeft ul {
+  width: 4.26rem;
+  height: 5.2rem;
+  padding: 0;
+  margin-top: 0.8rem;
+}
+
+.boxDelayAndTraffic .topLeft ul li {
+  padding: 0;
+  margin: 0;
+  width: 4.26rem;
+  height: 0.94rem;
+  margin: 0.25rem 0;
+  position: relative;
+  cursor: pointer;
+}
+
+.boxDelayAndTraffic .topLeft ul li:nth-child(1) {
+  background: url(../../img/runStateImg/a.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.boxDelayAndTraffic .topLeft ul li:nth-child(1).on {
+  background: url(../../img/runStateImg/a-on.png);
+  background-size: 100% 100%;
+}
+
+.boxDelayAndTraffic .topLeft ul li:nth-child(2) {
+  background: url(../../img/runStateImg/b.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.boxDelayAndTraffic .topLeft ul li:nth-child(2).on {
+  background: url(../../img/runStateImg/b-on.png);
+  background-size: 100% 100%;
+}
+
+.boxDelayAndTraffic .topLeft ul li:nth-child(3) {
+  background: url(../../img/runStateImg/c.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.boxDelayAndTraffic .topLeft ul li:nth-child(3).on {
+  background: url(../../img/runStateImg/c-on.png);
+  background-size: 100% 100%;
+}
+
+.boxDelayAndTraffic .topLeft ul li:nth-child(4) {
+  background: url(../../img/runStateImg/d.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.boxDelayAndTraffic .topLeft ul li:nth-child(4).on {
+  background: url(../../img/runStateImg/d-on.png);
+  background-size: 100% 100%;
+}
+
+.boxDelayAndTraffic .topLeft ul li span {
+  position: absolute;
+  color: #04cbf5;
+  top: 0.1rem;
+  right: 1.4rem;
+  font-size: 0.20rem;
+}
+
+.boxDelayAndTraffic .topRight {
+  position: relative;
+  width: 13.74rem;
+  height: 6.174rem;
+  float: left;
+}
+
+.boxDelayAndTraffic .bottomList {
+  background-image: url(../../img/delayAndTraffic/sq.png);
+  background-size: 100% 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .box {
+    overflow-x: scroll;
+  }
+}
+
+.boxSrollY {
+  overflow-y: scroll;
+}
+
+.jz {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.showSqure {
+  width: 18.16rem;
+  height: 9rem;
+  position: absolute;
+  margin: auto;
+  background-size: 100% 100%;
+}
+
+.showSqure {
+  width: 18.6rem;
+  height: 9.4rem;
+  background: url("../../img/loginImg/loginBg31.png");
+  background-size: 100% 100%;
+  font-family: 'Microsoft YaHei';
+}
+
+.box {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 5px #0cc3ec;
+  background: #0cc3ec;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 5px #0cc3ec;
+  background: #0cc3ec;
+}
+
+.boxRunState {
+  height: 8.8rem;
+  width: 18rem;
+}
+
+.boxRunState .leftBox {
+  width: 4.27rem;
+  height: 8rem;
+  padding-top: 0.6rem;
+  overflow: hidden;
+  float: left;
+}
+
+.boxRunState .leftBox .dList {
+  width: 4.26rem;
+  height: 0.94rem;
+  margin: 0.25rem 0;
+  position: relative;
+  cursor: pointer;
+}
+
+.boxRunState .leftBox .dList:nth-child(1) {
+  background: url(../../img/runStateImg/a.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.boxRunState .leftBox .dList:nth-child(1).on {
+  background: url(../../img/runStateImg/a-on.png);
+  background-size: 100% 100%;
+}
+
+.boxRunState .leftBox .dList:nth-child(2) {
+  background: url(../../img/runStateImg/b.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.boxRunState .leftBox .dList:nth-child(2).on {
+  background: url(../../img/runStateImg/b-on.png);
+  background-size: 100% 100%;
+}
+
+.boxRunState .leftBox .dList:nth-child(3) {
+  background: url(../../img/runStateImg/c.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.boxRunState .leftBox .dList:nth-child(3).on {
+  background: url(../../img/runStateImg/c-on.png);
+  background-size: 100% 100%;
+}
+
+.boxRunState .leftBox .dList:nth-child(4) {
+  background: url(../../img/runStateImg/d.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.boxRunState .leftBox .dList:nth-child(4).on {
+  background: url(../../img/runStateImg/d-on.png);
+  background-size: 100% 100%;
+}
+
+.boxRunState .leftBox .dList span {
+  position: absolute;
+  color: #04cbf5;
+  top: 0.1rem;
+  right: 1.4rem;
+  font-size: 0.20rem;
+}
+
+.boxRunState .rightBox {
+  float: left;
+  width: 13.73rem;
+  height: 8rem;
+  padding: 0;
+  position: relative;
+}
+
+.boxRunState .rightBox .airList {
+  margin-left: 0.5rem;
+  width: 3.1rem;
+  font-size: 0.18rem;
+  color: #04CBF5;
+  height: 8rem;
+  float: left;
+  overflow: hidden;
+  position: absolute;
+  top: 0.48rem;
+}
+
+.boxRunState .rightBox .airList #tableTpl2 {
+  width: 3.1rem;
+  font-size: 0.18rem;
+  color: #04CBF5;
+  position: absolute;
+}
+
+.boxRunState .rightBox .airList #tableTpl2 ul {
+  width: 100%;
+  height: 0.42rem;
+  padding: 0;
+  margin: 0;
+}
+
+.boxRunState .rightBox .airList #tableTpl2 ul li {
+  height: 0.42rem;
+  font-size: 0.14rem;
+  float: left;
+  width: 0.7rem;
+  line-height: 0.42rem;
+}
+
+.boxRunState .rightBox .airList #tableTpl2 ul li:nth-child(1) {
+  width: 1.4rem;
+}
+
+.boxRunState .rightBox .airList #tableTpl2 ul li:nth-child(2), .boxRunState .rightBox .airList #tableTpl2 ul li:nth-child(3) {
+  text-align: center;
+}
+
+.boxRunState .rightBox .gtt {
+  width: 10rem;
+  height: 8rem;
+  float: left;
+  overflow: scroll;
+  position: absolute;
+  left: 3.5rem;
+}
+
+.boxRunState .rightBox .time {
+  padding: 0;
+  margin: 0;
+  width: 10rem;
+  height: 0.5rem;
+  overflow: hidden;
+  position: relative;
+  left: 3.5rem;
+}
+
+.boxRunState .rightBox .time ul {
+  padding: 0;
+  margin: 0;
+  width: 96rem;
+  height: 0.5rem;
+  overflow: hidden;
+  position: absolute;
+}
+
+.boxRunState .rightBox .time ul li {
+  float: left;
+  width: 4rem;
+  height: 0.5rem;
+  font-size: 0.16rem;
+  color: #04cbf5;
+  line-height: 0.5rem;
+  position: relative;
+}
+
+.boxRunState .rightBox .time ul li:before {
+  position: absolute;
+  top: 0;
+  left: 0.3rem;
+  width: 0.14rem;
+  height: 0.14rem;
+  line-height: 0.22rem;
+  content: '';
+  font-size: 0.12rem;
+  color: #fff;
+  z-index: 10;
+  background: url(../../img/runStateImg/timeIcon.png);
+  background-size: 100% 100%;
+}
+
+.boxRunState .rightBox .gttBox {
+  padding: 0;
+  margin: 0;
+  width: 96rem;
+  height: 10rem;
+}
+
+.boxRunState .rightBox .gttBox .gttZzt {
+  width: 96rem;
+  position: relative;
+}
+
+.boxRunState .rightBox .gttBox .gttZzt .timeNow {
+  width: 0rem;
+  height: 9.5rem;
+  border-right: 0.03rem dashed rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 0;
+  z-index: 10;
+}
+
+.boxRunState .rightBox .gttBox .gttZzt .child {
+  height: 0.22rem;
+  position: relative;
+  z-index: 1;
+}
+
+.boxRunState .rightBox .gttBox .gttZzt .child .modOne01, .boxRunState .rightBox .gttBox .gttZzt .child .modOne02 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  height: 0.22rem;
+  text-align: center;
+  line-height: 0.22rem;
+  font-size: 0.12rem;
+  color: #0d152f;
+}
+
+.boxRunState .rightBox .gttBox .gttZzt .child .modOne01:after {
+  position: absolute;
+  top: 0;
+  right: 0.1rem;
+  line-height: 0.22rem;
+  content: 'EOBT';
+  font-size: 0.12rem;
+  color: #0d152f;
+  z-index: 10;
+}
+
+.boxRunState .rightBox .gttBox .gttZzt .child .modOne01 .EIBT {
+  position: absolute;
+  top: 0;
+  left: 0.4rem;
+  display: inline-block;
+  height: 0.22rem;
+  text-align: center;
+  line-height: 0.22rem;
+  font-size: 0.12rem;
+  font-style: normal;
+  color: #0d152f;
+}
+
+.boxRunState .rightBox .gttBox .gttZzt .child .modOne02 {
+  text-align: right;
+}
+
+.boxRunState .rightBox .gttBox .gttZzt .child .modTwo01, .boxRunState .rightBox .gttBox .gttZzt .child .modTwo02, .boxRunState .rightBox .gttBox .gttZzt .child .modTwo03 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  height: 0.22rem;
+  font-size: 0.12rem;
+  text-align: center;
+  color: #fff;
+}
+
+.boxRunState .rightBox .gttBox .gttZzt .hs {
+  background-color: #707070;
+}
+
+.boxRunState .rightBox .gttBox .gttZzt .bd {
+  border: 1px solid #385258;
+}
+
+.boxRunState .rightBox .gttBox .gttZzt .yellow {
+  background: #b8e986;
+}
+
+.boxRunState .rightBox .gttBox .gttZzt .blue {
+  background-color: #3399cc;
+}
+
+.boxRunState .rightBox .gttBox .gttZzt .d1 {
+  margin-bottom: 0.19rem;
+}
+
+.boxRunState .rightBox .gttBox .gttZzt .d1:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 0.22rem;
+  content: 'EIBT';
+  font-size: 0.12rem;
+  color: #0d152f;
+  z-index: 10;
+}
+
+.boxRunState .rightBox .gttBox .gttZzt .d2 {
+  margin-bottom: 0.19rem;
+}

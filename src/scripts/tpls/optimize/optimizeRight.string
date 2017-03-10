@@ -1,0 +1,176 @@
+<table class="top" cellpadding="0" cellspacing="0"> 
+    <tr>
+        <td class="titles on">航班排序</td>
+        <td class="titles">进港</td>
+        <td class="titles">出港</td>
+    </tr>
+</table>
+<div class="box-wrap">
+    <ul class="lists" id="lists">
+        <li id="item1" class="item">
+            <div id="scroll" style="width:4rem;height: 7rem;">
+                <div id="content1" class="content">
+                    <dl class="order" id="dl0">
+                        <dt class="replace">11/1000</dt>
+                        <dd>00</dd>
+                        <dd>05</dd>
+                        <dd>10</dd>
+                        <dd>15</dd>
+                        <dd>20</dd>
+                        <dd>25</dd>
+                        <dd>30</dd>
+                        <dd>35</dd>
+                        <dd>40</dd>
+                        <dd>45</dd>
+                        <dd>50</dd>
+                        <dd>55</dd>
+                    </dl>
+                    <dl class="order" id="dl1">
+                        <dt class="replace">11/1000</dt>
+                        <dd>00</dd>
+                        <dd>05</dd>
+                        <dd>10</dd>
+                        <dd>15</dd>
+                        <dd>20</dd>
+                        <dd>25</dd>
+                        <dd>30</dd>
+                        <dd>35</dd>
+                        <dd>40</dd>
+                        <dd>45</dd>
+                        <dd>50</dd>
+                        <dd>55</dd>
+                    </dl>
+                    <dl class="order" id="dl2">
+                        <dt class="replace">11/1000</dt>
+                        <dd>00</dd>
+                        <dd>05</dd>
+                        <dd>10</dd>
+                        <dd>15</dd>
+                        <dd>20</dd>
+                        <dd>25</dd>
+                        <dd>30</dd>
+                        <dd>35</dd>
+                        <dd>40</dd>
+                        <dd>45</dd>
+                        <dd>50</dd>
+                        <dd>55</dd>
+                    </dl>
+                    <dl class="order" id="dl3">
+                        <dt class="replace">11/1000</dt>
+                        <dd>00</dd>
+                        <dd>05</dd>
+                        <dd>10</dd>
+                        <dd>15</dd>
+                        <dd>20</dd>
+                        <dd>25</dd>
+                        <dd>30</dd>
+                        <dd>35</dd>
+                        <dd>40</dd>
+                        <dd>45</dd>
+                        <dd>50</dd>
+                        <dd>55</dd>
+                    </dl>
+                    <dl class="order" id="dl4">
+                        <dt class="replace">11/1000</dt>
+                        <dd>00</dd>
+                        <dd>05</dd>
+                        <dd>10</dd>
+                        <dd>15</dd>
+                        <dd>20</dd>
+                        <dd>25</dd>
+                        <dd>30</dd>
+                        <dd>35</dd>
+                        <dd>40</dd>
+                        <dd>45</dd>
+                        <dd>50</dd>
+                        <dd>55</dd>
+                    </dl>
+                    <dl class="order" id="dl5">
+                        <dt class="replace">11/1000</dt>
+                        <dd>00</dd>
+                        <dd>05</dd>
+                        <dd>10</dd>
+                        <dd>15</dd>
+                        <dd>20</dd>
+                        <dd>25</dd>
+                        <dd>30</dd>
+                        <dd>35</dd>
+                        <dd>40</dd>
+                        <dd>45</dd>
+                        <dd>50</dd>
+                        <dd>55</dd>
+                    </dl>
+                    <dl class="order" id="dl6">
+                        <dt class="replace">11/1000</dt>
+                        <dd>00</dd>
+                        <dd>05</dd>
+                        <dd>10</dd>
+                        <dd>15</dd>
+                        <dd>20</dd>
+                        <dd>25</dd>
+                        <dd>30</dd>
+                        <dd>35</dd>
+                        <dd>40</dd>
+                        <dd>45</dd>
+                        <dd>50</dd>
+                        <dd>55</dd>
+                    </dl>
+                    <dl class="order" id="dl7">
+                        <dt class="replace">11/2000</dt>
+                        <dd>00</dd>
+                        <dd>05</dd>
+                        <dd>10</dd>
+                        <dd>15</dd>
+                        <dd>20</dd>
+                        <dd>25</dd>
+                        <dd>30</dd>
+                        <dd>35</dd>
+                        <dd>40</dd>
+                        <dd>45</dd>
+                        <dd>50</dd>
+                        <dd>55</dd>
+                    </dl>
+                </div>
+            </div>
+        </li>
+        <li class="item">
+            <div id="scroll1" style="width:100%;height: 6.5rem;">
+                <div class="content" style="overflow:hidden; width:100%">
+
+                    <div id="tableTpl2">
+                        <dl class="import">
+                            <dd>CA1103</dd>
+                            <dd>B1723</dd>
+                            <dd>到达 9:20</dd>
+                            <dd>起飞 5:00</dd>
+                            <dd>ZWWW</dd>
+                            <dd>ZBAA</dd>
+                        </dl>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="flight-order"><a href="javascript:;" class='showD'>航班排序优化建议</a></div>
+        </li>
+        <li class="item">
+            <div id="scroll2" style="width:100%;height: 6.5rem;">
+                <div class="content" style="overflow:hidden; width:100%">
+
+                    <div id="tableTpl3">
+                        <dl class="import">
+                            <dd>CA1103</dd>
+                            <dd>B1723</dd>
+                            <dd>到达 9:20</dd>
+                            <dd>起飞 5:00</dd>
+                            <dd>ZWWW</dd>
+                            <dd>ZBAA</dd>
+                        </dl>
+                    </div>
+
+                    
+                </div>
+            </div>
+            <div class="flight-order"><a href="javascript:;" class='showD'>航班排序优化建议</a></div>
+        </li>
+    </ul>
+</div>

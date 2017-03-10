@@ -1,0 +1,382 @@
+.showSqure{
+     width: 18.16rem;
+    height: 9rem;
+    position: absolute;
+//  top:2%;
+//  left: 0;
+//  right: 0;
+    margin: auto;
+    background: url(../../img/indexImg/bg3.png);
+    background-size: 100% 100%;
+    .lT1{
+         position: absolute;
+        top: 9%;
+        left: 0.6rem;
+        width: 1.84rem;
+        height: 1.15rem;
+    }
+    .lT1 img{
+        width: 100%;
+    }
+    .lT2{
+        width: 0.45rem;
+        height: 0.55rem;
+        background-image: url(../../img/indexImg/lT2.PNG);
+        background-size: 100% 100%;
+        position: absolute;
+        left: 3.2rem;
+        top: 10%;
+    }
+    .rT1{
+        position: absolute;
+        top: 9%;
+        right: 0.2rem;
+        width: 3.1rem;
+        height: 1.53rem;
+        background-image: url(../../img/indexImg/map.png);
+        background-size: 100% 100%;
+    }
+    
+    
+    
+    .lB1{
+        position: absolute;
+        bottom: 11%;
+        left: 0.8rem;
+        width: 0.73rem;
+        height: 0.73rem;
+        background-image:url(../../img/indexImg/lB11.png); 
+        background-size: 100% 100%;
+        .divLeft,.divCenter,.divRight{
+           position: absolute;
+           bottom: 0;
+            float: left;
+            width: 0.2rem;
+            
+            overflow: hidden;
+           
+            span{
+                display: block;
+                width: 100%;
+                height: 0.05rem;
+                background-color: #05b9e2;
+                margin-top: 0.06rem;
+            }
+            .marTop0{
+               margin-top: 0;
+             }
+        }
+        .divLeft{
+            height: 0.27rem;
+            left: 0;
+              animation: myfirst2 9s;
+              -webkit-animation: myfirst2 9s; /* Safari 与 Chrome */
+            animation-iteration-count:infinite;
+             -webkit-animation-iteration-count:infinite;
+        }
+        .divCenter{
+            height: 0.62rem;
+            left: 0.265rem;
+              animation: myfirst 6s;
+      -webkit-animation: myfirst 6s; /* Safari 与 Chrome */
+     animation-iteration-count:infinite;
+             -webkit-animation-iteration-count:infinite;
+        }
+        .divRight{
+            height: 0.38rem;
+            right: 0;
+              animation: myfirst3 3s;
+    -webkit-animation: myfirst3 3s; /* Safari 与 Chrome */
+   animation-iteration-count:infinite;
+             -webkit-animation-iteration-count:infinite;
+        }
+        
+       
+    }
+    .lB2{
+        position: absolute;
+         bottom: 12%;
+        left: 3.2rem;
+        width: 0.45rem;
+        height: 0.50rem;
+        background-image: url(../../img/indexImg/lB2.png);
+        background-size: 100% 100%;
+    }
+    .rB1{
+        position: absolute;
+        bottom: 10%;
+        right: 0.8rem;
+         width: 1.09rem;
+        height: 1.09rem;
+    }
+    .lB1 img,.rB1 img{
+        width: 100%;
+    }
+}
+
+.centerBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 4.56rem;
+    height: 4.06rem;
+    margin: auto;
+    border: 0.08rem solid #05b9e2;
+    border-left: 0;
+    border-right: 0;
+    .head,.foot{
+        width: 2rem;
+        height: 0.1rem;
+        position: absolute;
+        margin: auto;
+        border: 0.08rem solid #05b9e2;
+        left: 0;
+        right: 0;
+        
+    }
+    
+    .head{
+        top:-0.7rem;
+        border-bottom: 0;
+    }
+    .foot{
+        bottom:-0.7rem;
+        border-top: 0;
+    }
+    h1{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -2rem;
+    text-align: center;
+    height: 3rem;
+    font-size: 0.4rem;
+    color: #05b9e2;
+}
+    .centerTop,
+    .centerBottom {
+        font-size: 0!important;
+        padding: 0.1rem 0;
+    }
+       .centerTop p,
+    .centerBottom p{
+       position: absolute;
+       left: 50%;
+       -webkit-transform: translateX(-50%);    /* for Chrome || Safari */
+           -moz-transform: translateX(-50%);     /* for Firefox */          
+            -ms-transform: translateX(-50%);        /* for IE */
+           -o-transform: translateX(-50%);         /* for Opera */
+       transform: translateX(-50%);
+       
+    } 
+    .centerBottom {
+       position: absolute;
+       bottom: 0;
+       left: 50%;
+       -webkit-transform: translateX(-50%);    /* for Chrome || Safari */
+           -moz-transform: translateX(-50%);     /* for Firefox */          
+            -ms-transform: translateX(-50%);        /* for IE */
+           -o-transform: translateX(-50%); 
+       transform: translateX(-50%);
+        
+    }
+   
+    .centerTop span,
+    .centerBottom span {
+        margin:0rem 0.05rem;
+        color: #05b9e2;
+        font: bolder 0.02rem "微软雅黑" !important;
+    }
+
+    .centerSmall {
+        position: absolute;
+        width: 2.41rem;
+        height: 2.41rem;
+        overflow: hidden;
+    }
+    .yuan {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 2.6rem;
+        height: 2.6rem;
+        -webkit-transition: All 1s 0s;
+        -moz-transition: All 1s 0s;
+        -ms-transition: All 1s 0s;
+        border-radius: 50%;
+    }
+    .yuan li {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+//      background-color: yellow;
+        
+    }
+    
+    .yuan li img {  
+        width: 100%;     
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }
+     .yuan  li:nth-of-type(1){
+         width: 1.98rem;
+         height: 1.98rem;
+     }
+     .yuan  li:nth-of-type(2){
+         width: 2.25rem;
+         height: 2.22rem;
+//       margin-top: -0.02rem;
+     }
+     .yuan  li:nth-of-type(3){
+         width: 2.36rem;
+         height: 2.36rem;
+     }
+     .yuan  li:nth-of-type(4) img{
+         width: 1.37rem;
+         height: 0.48rem;
+         
+     }
+     .yuan  li:nth-of-type(4) img:hover{
+         -webkit-animation:grow 0.8s cubic-bezier(0.175,0.885,0.32,1.275);
+    -moz-animation:grow 0.8s cubic-bezier(0.175,0.885,0.32,1.275);
+    animation:grow 0.8s cubic-bezier(0.175,0.885,0.32,1.275)
+     }
+     
+     .yuan  li:nth-of-type(1) img{
+        
+    -webkit-animation: z1 10s linear 0s infinite;
+    -moz-animation: z1 10s linear 0s infinite;
+    -ms-animation: z1 10s linear 0s infinite;
+    animation: z1 10s linear 0s infinite;
+}
+ .yuan li:nth-of-type(2) img{
+   
+    -webkit-animation: z2 10s linear 0s infinite;
+    -moz-animation: z2 10s linear 0s infinite;
+    -ms-animation: z2 10s linear 0s infinite;
+    animation: z2 10s linear 0s infinite;
+ 
+}
+
+ .yuan li:nth-of-type(3) img{
+//   &:nth-of-type(2){
+//       -webkit-animation: z2 20s linear 0s infinite;
+//  -moz-animation: z2 20s linear 0s infinite;
+//  -ms-animation: z2 20s linear 0s infinite;
+//  animation: z2 20s linear 0s infinite;
+//   }
+    -webkit-animation: z1 5s linear 0s infinite;
+    -moz-animation: z1 5s linear 0s infinite;
+    -ms-animation: z1 5s linear 0s infinite;
+    animation: z1 5s linear 0s infinite;
+}
+}
+.centerD2 {
+    left: -0.77rem;
+    top: 0.395rem;
+    border-left: 0.08rem solid #05b9e2;
+    -webkit-transform:  rotateZ(30deg)   ;
+     -moz-transform:  rotateZ(30deg)   ;     /* for Firefox */          
+            -ms-transform:  rotateZ(30deg)   ;      /* for IE */
+           -o-transform:  rotateZ(30deg)   ;
+           transform:  rotateZ(30deg)   ;
+}
+.centerD3 {
+    left: -0.77rem;
+    bottom: 0.395rem;
+    border-left: 0.08rem solid #05b9e2;
+    -webkit-transform:  rotateZ(-30deg)   ;
+    -moz-transform:  rotateZ(-30deg)   ;
+   -ms-transform:  rotateZ(-30deg)   ;
+    -o-transform:  rotateZ(-30deg)   ;
+    transform:  rotateZ(-30deg)   ;
+}
+.centerD4 {
+    left: 2.85rem;
+    top: 0.395rem;
+    border-right: 0.08rem solid #05b9e2;
+    -webkit-transform:  rotateZ(-30deg)   ;
+    -moz-transform:  rotateZ(-30deg)   ;
+    -ms-transform:  rotateZ(-30deg)   ;
+    -o-transform:  rotateZ(-30deg)   ;
+    transform:  rotateZ(-30deg)   ;
+}
+.centerD5 {
+    left: 2.85rem;
+    bottom: 0.395rem;
+    border-right: 0.08rem solid #05b9e2;
+    -webkit-transform:  rotateZ(30deg);
+    -moz-transform:  rotateZ(30deg);
+    -ms-transform:  rotateZ(30deg);
+    -o-transform:  rotateZ(30deg)   ;
+    transform:  rotateZ(30deg)   ;
+}
+.centerUl {
+    width: 2rem;
+    overflow: hidden;
+    li {
+        width: 1.2rem;
+        height: 0.02rem;
+        border: 0.01rem solid #095676;
+        background-color: #095676;
+        border-radius: 0.02rem;
+    }
+    .centerSmallactiveLi {
+        height: 0.06rem;
+        border: 0.01rem solid #05b9e2;
+        background-color: #05b9e2;
+        margin-top: 0;
+    }
+}
+.centerD2 ul {
+    margin-top: 0.26rem;
+    margin-left: 0;
+    padding-left: 0.2rem;
+    li {
+        margin-top: 0.13rem;
+        margin-left: 0;
+    }
+}
+.centerD3 ul {
+    margin-bottom: 0.26rem;
+    margin-left: 0;
+    padding-left: 0.2rem;
+    li {
+        margin-top: 0.13rem;
+        margin-left: 0;
+    }
+    .centerSmallactiveLi {
+        margin-top: 0.13rem;
+    }
+}
+.centerD4 ul {
+    margin-top: 0.26rem;
+    margin-left: 0;
+    float: right;
+    padding-right: 0.2rem;
+    li {
+        margin-top: 0.13rem;
+        float: right;
+    }
+}
+.centerD5 ul {
+    margin-bottom: 0.26rem;
+    margin-left: 0;
+    float: right;
+    padding-right: 0.2rem;
+    li {
+        margin-top: 0.13rem;
+        float: right;
+    }
+    .centerSmallactiveLi {
+        margin-top: 0.13rem;
+    }
+    
+}

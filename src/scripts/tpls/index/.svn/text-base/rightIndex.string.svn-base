@@ -1,0 +1,110 @@
+<div class="rightBox pBox">
+	<div class="fblbx1 fg">
+		<p class="fgP1 ">
+			▽
+		</p>
+		<p class="fgP2 jz">数据感知</p>
+		<ul class="fgD">
+			<li class="fgDLi1"></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+		</ul>
+		<div class="img">
+			
+		</div>
+	</div>
+	<div class="fblbx2 fg">
+		<p class="fgP1 ">
+			▽
+		</p>
+		<p class="fgP2 jz">数据资产</p>
+		<ul class="fgD">
+			<li class="fgDLi1"></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+		</ul>
+		<div class="img">
+			
+		</div>
+	</div>
+	<div class="fblbx3 fg">
+		<p class="fgP1 ">
+			△
+		</p>
+		<p class="fgP2 jz">数据汇聚</p>
+		<ul class="fgD">
+			<li class="fgDLi1"></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+		</ul>
+		<div class="img">
+			
+		</div>
+	</div>
+	<div class="fblbx4 fg">
+		<p class="fgP1 ">
+			△
+		</p>
+		<p class="fgP2 jz">数据融合</p>
+		<ul class="fgD">
+			<li class="fgDLi1"></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+		</ul>
+		<div class="img">
+			
+		</div>
+	</div>
+	
+	<div class="lbx lbx1">
+		<div class="ndiv2 rNdiv2">
+			
+		</div>
+		<div class="ndiv3 rNdiv3">
+			
+		</div>
+		<div class="ndiv4 rlNdiv4">
+			
+		</div>
+		<div class="ndiv5 rNdiv5">
+			
+		</div>
+	</div>
+	<div class="lbx lbx2">
+		<div class="ndiv2 lNdiv2">
+			
+		</div>
+		<div class="ndiv3 lNdiv3">
+			
+		</div>
+		<div class="ndiv4 lNdiv4">
+			
+		</div>
+		<div class="ndiv5 lNdiv5">
+			
+		</div>
+	</div>
+	<div class="lbx lbx3">
+		<div class="ndiv2 lNdiv2">
+			
+		</div>
+		<div class="ndiv3 lNdiv3">
+			
+		</div>
+		<div class="ndiv4 lNdiv4">
+			
+		</div>
+		<div class="ndiv5 lNdiv5">
+			
+		</div>
+	</div>
+	<div class="lbx lbx4">
+		<div class="ndiv2 lNdiv2">
+			
+		</div>
+		<div class="ndiv3 lNdiv3">
+			
+		</div>
+		<div class="ndiv4 lNdiv4">
+			
+		</div>
+		<div class="ndiv5 lNdiv5">
+			
+		</div>
+	</div>
+    <div class="iconLeft iconN">
+    	<img src="../../../../img/indexImg/icon2.png"/>
+    </div>
+</div>

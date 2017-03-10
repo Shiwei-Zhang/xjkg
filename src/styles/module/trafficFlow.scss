@@ -1,0 +1,328 @@
+.showSqure {
+    width: 18.6rem;
+    height: 9.4rem;
+    background: url("../../img/loginImg/loginBg31.png");
+    background-size: 100% 100%;
+}
+.trafficBody {
+    .topBox {
+        height: 6.9rem;
+    }
+    .bottomBox {
+        height: 2.5rem;
+    }
+    .topRight {
+        height: 6.9rem;
+        width: 11rem;
+        .title {
+            width: 9.5rem;
+            height: 0.7rem;
+            line-height: 0.7rem;
+            text-align: center;
+            color: #18d3fd;
+            font-size: 0.32rem;
+            font-family: '黑体';
+            margin-top: 0.3rem;
+        }
+        .container {
+            position: absolute;
+            top: 1rem;
+            right: -5rem;
+        }
+        .mapBox {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 13rem;
+            height: 6.9rem;
+            display: block;
+            float: left;
+            padding: 0 0.5rem; //          background-color: yellow;
+            #mapChina {
+                width: 13rem;
+                height: 6rem;
+            }
+        }
+        .time {
+            position: absolute;
+            width: 9.8rem;
+            left: 1rem;
+            z-index: 6;
+            height: 0.5rem;
+            // border: 1px solid #0496d3;
+            bottom: 0.5rem;
+            padding-left: 0.2rem;
+            // position: relative;
+            //padding: 0;
+            .hk1 {
+                position: absolute;
+                width: 0.43rem;
+                height: 0.38rem;
+                z-index: 999;
+                left: 1rem;
+                background-image: url("../../img/trafficPredictionImg/PlanetIcon.png");
+                .timeHKtimt {
+                    width: 0.6rem;
+                    height: 0.4rem;
+                    position: absolute;
+                    line-height: 0.4rem;
+                    text-align: center;
+                    top: -0.5rem;
+                    color: #f66d02; //                  border-radius: 0.08rem; 
+                    //                  background-color: #f66d02;
+                }
+            }
+            .timez {
+                margin: 0;
+                width: 1.66rem;
+                float: left;
+                color: #00BBEC;
+                height: 0.5rem;
+                border-bottom: 1px solid #0496d3;
+                p {
+                    width: 1.66rem;
+                    height: 0.2rem;
+                }
+                span {
+                    display: block;
+                    float: left;
+                    width: 0.83rem!important;
+                    height: 0.3rem;
+                    text-align: center;
+                    padding: 0;
+                    margin: 0;
+                    //border-right:1px solid red ;
+                }
+            }
+            .time6 {
+                width: 1.245rem;
+            }
+            //          border-top: 0;
+        }
+        .date {
+            width: 1.95rem;
+            height: 0.67rem;
+            float: right; //          background: url("../../img/delayAndTraffic/z-date.png") no-repeat;
+            background-size: cover;
+            margin-right: 0.65rem;
+        }
+    }
+    .topLeft {
+        ul {
+            margin-top: 1.4rem;
+            .jtllbg {
+                background-image: url(../../img/delayAndTraffic/jtlld.png)!important;
+            }
+        }
+    }
+    .trafficList {
+        //width: 6.3rem;
+        padding: 0 0.25rem;
+        height: 2.42rem;
+        float: left;
+        margin-left: 1.45rem;
+        margin-top: 0.4rem;
+        max-width: 6.8rem;
+        max-height: 3rem;
+        // overflow: hidden;
+        position: relative;
+        -webkit-user-select: none;
+        background-image: url("../../img/delayAndTraffic/sqx.png");
+        background-size: 100% 100%;
+    }
+    //title
+    .trafficList_title {
+        margin: 0;
+        height: 0.67rem; //      background-color: 0d152f;
+        color: #15b1d6;
+        .List_title {
+            margin: 0;
+            width: 6.8rem;
+            height: 0.3rem;
+            text-align: center;
+            line-height: 0.4rem;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .table_title {
+            margin: 0;
+            padding: 0;
+            height: 0.37rem;
+            line-height: 0.37rem;
+            overflow: hidden;
+            position: absolute;
+            li {
+                width: 3rem;
+                list-style: none;
+                float: left;
+                font-size: 16px;
+                padding: 0 0.15rem;
+                text-align: center;
+            }
+        }
+        .table_title2 li {
+            width: 2rem;
+        }
+    }
+    //table
+    .tableBox {
+        width: 6.85rem;
+        height: 1.4rem;
+        overflow: hidden;
+        position: absolute;
+        z-index: 0;
+        font-family: "微软雅黑";
+        table {
+            width: 6rem;
+            overflow: hidden;
+            tr {
+                width: 6rem;
+                td {
+                    width: 2.8rem!important;
+                    padding: 0;
+                    text-align: center;
+                }
+            }
+        }
+        .listContainer2 {
+            width: 6rem;
+            overflow: hidden;
+            tr {
+                width: 6rem;
+                td {
+                    width: 1.8rem!important;
+                    padding: 0;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .listContainer {
+        //  display: block;
+        width: 6.27rem;
+        height: 1.4rem;
+        max-width: 6.27rem;
+        max-height: 1.4rem;
+        font-size: 14px;
+        color: #18d3fd; //  overflow: hidden;
+        //      position: absolute;
+        //      z-index: 0;
+        //      tr {
+        //          line-height: 0.35rem;
+        //          td {
+        //              padding: 0 0.35rem;
+        //              white-space: nowrap;
+        //              text-align: center;
+        //              font-size: 14px;
+        //          }
+        //      }
+    }
+    //滚动条
+    .scrollBarBottom {
+        position: absolute;
+        bottom: 0.06rem;
+        left: 3rem;
+        z-index: 100;
+        width: 0.3rem;
+        height: 0.03rem;
+        background-color: #18d3fd;
+        cursor: pointer;
+    }
+    .scrollBarRight {
+        position: absolute;
+        right: 0.02rem;
+        top: 0.67rem;
+        height: 0.3rem;
+        width: 0.03rem;
+        background-color: #18d3fd;
+        cursor: pointer;
+    }
+//  .scrollBar {
+//      position: absolute;
+//      bottom: 0.16rem;
+//      left: 2rem;
+//      z-index: 100;
+//      width: 0.04rem;
+//      height: 0.3rem;
+//      background-color: #ff7000;
+//      cursor: pointer;
+//      i {
+//          width: 1rem;
+//          height: 0.5rem;
+//          color: #ff7000;
+//          position: absolute;
+//          top: 0.3rem;
+//      }
+//  }
+    .line {
+        position: absolute;
+        bottom: 0.2rem;
+        margin-top: 1rem;
+        width: 11rem;
+        height: 0.21rem;
+        border: 0; //          border: 1px solid red;
+        display: block;
+        // background-image: url(../../../img/trafficPredictionImg/arrow.png);
+        // padding: 0 0.5rem;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        span {
+            width: 0.2rem;
+            height: 0.2rem;
+            position: absolute;
+            color: #0699c9;
+            &.span1 {
+                left: 0.5rem;
+                top: 0.2rem;
+                line-height: 0.2rem;
+            }
+            &.span2 {
+                right: 0.5rem;
+                top: 0.2rem;
+                line-height: 0.2rem;
+            }
+        }
+    }
+    .linez {
+        width: 10rem;
+        height: 0.21rem;
+        position: relative;
+        // margin-top: 6.5rem;
+        top: 6.5rem;
+        left: 0.5rem;
+        background-image: url("../../img/trafficPredictionImg/arrow.png");
+        background-size: 100% 100%;
+        .scrollBar {
+            position: absolute;
+            left: 5rem;
+            z-index: 100;
+            width: 0.04rem;
+            height: 0.3rem;
+            background-color: #ff7000;
+            cursor: pointer;
+            i {
+                width: 1rem;
+                height: 0.5rem;
+                color: #ff7000;
+                position: absolute;
+                top: 0.3rem;
+                left: -0.2rem;
+            }
+        }
+    }
+}
+
+
+#timer{
+    width: 2rem;
+    height: 0.5rem;
+    border: 1px solid #17d2fc;
+    background-color:rgba(13,36,62,0.5)!important;
+    background-image: url(../../img/delayAndTraffic/z-date.png);
+    background-size: 100% 100%;
+    color: #05b9e2;
+    font-size: 0.2rem;
+    text-align: center;
+}

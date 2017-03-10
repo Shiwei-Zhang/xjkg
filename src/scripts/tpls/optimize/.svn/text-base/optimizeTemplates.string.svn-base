@@ -1,0 +1,12 @@
+<script id="tpl-data1" type="text/html">
+        {{each list as value i}}
+        	<dl class="import">
+                <dd>{{value[0]}}</dd>
+                <dd>{{value[1]}}</dd>
+                <dd>{{value[2]}}</dd>
+                <dd>{{value[3]}}</dd>
+                <dd>{{value[4]}}</dd>
+                <dd>{{value[5]}}</dd>
+            </dl>
+        {{/each}}
+</script>

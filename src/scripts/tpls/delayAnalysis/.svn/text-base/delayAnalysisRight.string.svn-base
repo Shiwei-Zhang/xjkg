@@ -1,0 +1,47 @@
+<div class="topRight delayRight">
+    <h2>延误分析
+	    <div class="container-zhu">
+			<input type="text" id="tm1" class="Wdate" />
+	    </div>
+    </h2>
+    <div class="barGraph bar1">
+        <div id="main"></div>
+        <p>航
+            <br/>空
+            <br/>公
+            <br/>司
+            <br/>延
+            <br/>误
+            <br/>比
+            <br/>例</p>
+    </div>
+    <div class="barGraph bar2">
+        <div id="main1"></div>
+        <p>延
+            <br/>误
+            <br/>时
+            <br/>段
+            <br/>分
+            <br/>析</p>
+    </div>
+    <div class="barGraph bar3">
+        <div id="main2"></div>
+        <p>到
+            <br/>达
+            <br/>机
+            <br/>场
+            <br/>延
+            <br/>误
+            <br/>比
+            <br/>例</p>
+    </div>
+    <div class="barGraph bar4">
+        <div id="main3"></div>
+        <p>延
+            <br/>误
+            <br/>原
+            <br/>因
+            <br/>比
+            <br/>例</p>
+    </div>
+</div>

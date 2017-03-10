@@ -1,0 +1,17 @@
+<script id="tpl-data" type="text/html">
+    <div class="content">
+        {{each list as value i}}
+        <ul class="main-item">
+            <li>
+                <label class="lbs">
+                    <input type="radio" name="mainItem"> </label><span class="num">{{i}}</span></li>
+            <li>{{value.data_source_name}}</li>
+            <li>{{value.data_source_type}}</li>
+            <li>{{value.deployment_address}}</li>
+            <li>{{value.create_time}}</li>
+            <li>{{value.data_source_type}}</li>
+            <li><img src="./img/data/state/{{value.data_source_status}}.png" alt=""></li>
+        </ul>
+        {{/each}}
+    </div>
+</script>

@@ -1,0 +1,195 @@
+
+<div class="tcBox1">
+	<div class="tcTitle">
+		详细延误原因
+	</div>
+	<div class="tcContiner">
+		<div class="tcContent">
+			<div class="nodeBox nodeBox1">
+				<div class="borderSolid box1 r0 r1 r2 r3 r4 r5 r6 r7 r8 r9 r10 r11 r12 r13 r14 dashedCon"></div>
+				<span class="nodeText">EOBT≠STD</span>
+				<div class="squaBox squaBox1 r0 r1" data-c="c3" data="r1">
+					<span>航司原因</span>
+				</div>
+				<div class="lineRight lineR1">
+					<span class="lineW"></span><i class="triangle"></i>
+				</div>
+			</div>
+			<div class="lineDown line1">
+				<span class="lineW"></span><i class="triangle"></i>
+			</div>
+			<div class="nodeBox nodeBox2">
+				<div class="borderSolid box2 r0 r2 r3 r4 r5 r6 r7 r8 r9 r10 r11 r12 r13 r14 dashedCon"></div>
+				<span class="nodeText">TOBT&lt;EOBT</span>
+				<div class="squaBox squaBox2 r0 r2" data="r2">
+					<span>运行保障</span>
+				</div>
+				<div class="lineRight lineR1">
+					<span class="lineW"></span><i class="triangle"></i>
+				</div>
+			</div>
+			<div class="lineDown line2">
+				<span class="lineW"></span><i class="triangle"></i>
+			</div>
+			<div class="nodeBox nodeBox3">
+				<div class="borderDashed box3 r0 r3 r4 r5 r6 r7 r8 r9 r10 r11 r12 r13 r14"></div>
+				<span class="nodeText">TSAT&lt;EOBT</span>
+				<div class="circleBox circleBox31 r0 r3">
+					<span>关联流控</span>
+				</div>
+				<div class="circleBox circleBox32 r0 r4">
+					<span>计划超容量</span>
+				</div>
+				<div class="circleBox circleBox33 r0 r5">
+					<span>重要飞行</span>
+				</div>
+				<div class="squaBox squaBox31 r0 r3"  data-c="c1" data="r3">
+					<span>流控原因</span>
+				</div>
+				<div class="squaBox squaBox32 r0 r4"  data-c="c0" data="r4">
+					<span>时刻原因</span>
+				</div>
+				<div class="squaBox squaBox33 r0 r5" data="r5">
+					<span>军事原因</span>
+				</div>
+				<div class="lineRight lineR31">
+					<span class="lineW"></span><i class="triangle"></i>
+				</div>
+				<div class="lineRight lineR32">
+					<span class="lineW"></span><i class="triangle"></i>
+				</div>
+				<div class="lineRight lineR33">
+					<span class="lineW"></span><i class="triangle"></i>
+				</div>
+				<div class="lineRight lineR34">
+					<span class="lineW"></span><i class="triangle"></i>
+				</div>
+				<div class="brokenLine bL1">
+					<span class="lineW"></span><i class="triangle"></i><span class="lineD"></span>
+				</div>
+				<div class="brokenLine bL2">
+					<span class="lineW"></span><i class="triangle"></i><span class="lineD"></span>
+				</div>
+			</div>
+			<div class="lineDown line3">
+				<span class="lineW"></span><i class="triangle"></i>
+			</div>
+			<div class="nodeBox nodeBox4">
+				<div class="borderDashed box4 r0 r7 r8 r9 r10 r11 r12 r13 r14"></div>
+				<span class="nodeText">(TSAT+5)&lt;RDY&lt;TSAT</span>
+				<div class="circleBox circleBox41 r0 r7">
+					<span>关联流控</span>
+				</div>
+				<div class="circleBox circleBox42 r0 r8">
+					<span>未关联流控</span>
+				</div>
+				<div class="squaBox squaBox41 r0 r7 " data="r7">
+					<span>流控原因</span>
+				</div>
+				<div class="squaBox squaBox42 r0 r8"  data-c="c2" data="r8">
+					<span>运行保障</span>
+				</div>
+				<div class="lineRight lineR31">
+					<span class="lineW"></span><i class="triangle"></i>
+				</div>
+				<div class="lineRight lineR32">
+					<span class="lineW"></span><i class="triangle"></i>
+				</div>
+				<div class="lineRight lineR33">
+					<span class="lineW"></span><i class="triangle"></i>
+				</div>
+				<div class="brokenLine bL1">
+					<span class="lineW"></span><i class="triangle"></i><span class="lineD"></span>
+				</div>
+			</div>
+			<div class="lineDown line4">
+				<span class="lineW"></span><i class="triangle"></i>
+			</div>
+			<div class="nodeBox nodeBox5">
+				<div class="borderDashed box5 r0 r6 r7 r8 r9 r10 r11 r12 r13 r14"></div>
+				<span class="nodeText">RDY&lt;(TSAT+5)</span>
+				<div class="squaBox squaBox5 r0 r6"  data="r6">
+					<span>运行保障</span>
+				</div>
+				<div class="lineRight lineR1">
+					<span class="lineW"></span><i class="triangle"></i>
+				</div>
+			</div>
+			<div class="lineDown line5">
+				<span class="lineW"></span><i class="triangle"></i>
+			</div>
+			<div class="nodeBox nodeBox6">
+				<div class="borderDashed box6 r0 r9 r10 r11 r12 r13 r14"></div>
+				<span class="nodeText">RDY&gt;=TSAT</span>
+				<div class="circleBox circleBox31 r0 r9">
+					<span>关联流控</span>
+				</div>
+				<div class="circleBox circleBox32 r0 r10">
+					<span>计划超容量</span>
+				</div>
+				<div class="circleBox circleBox33 r0 r11">
+					<span>时刻原因</span>
+				</div>
+				<div class="squaBox squaBox31 r0 r9" data="r9">
+					<span>流控原因</span>
+				</div>
+				<div class="squaBox squaBox32 r0 r10" data="r10">
+					<span>时刻原因</span>
+				</div>
+				<div class="squaBox squaBox33 r0 r11" data="r11">
+					<span>军事原因</span>
+				</div>
+				<div class="lineRight lineR31">
+					<span class="lineW"></span><i class="triangle"></i>
+				</div>
+				<div class="lineRight lineR32">
+					<span class="lineW"></span><i class="triangle"></i>
+				</div>
+				<div class="lineRight lineR33">
+					<span class="lineW"></span><i class="triangle"></i>
+				</div>
+				<div class="lineRight lineR34">
+					<span class="lineW"></span><i class="triangle"></i>
+				</div>
+				<div class="brokenLine bL1">
+					<span class="lineW"></span><i class="triangle"></i><span class="lineD"></span>
+				</div>
+				<div class="brokenLine bL2">
+					<span class="lineW"></span><i class="triangle"></i><span class="lineD"></span>
+				</div>
+			</div>
+			<div class="lineDown line6">
+				<span class="lineW"></span><i class="triangle"></i>
+			</div>
+			<div class="nodeBox nodeBox7">
+				<div class="borderDashed box7 r0 r13 r12 r14"></div>
+				<span class="nodeText">23:00-05:00</span>
+				<div class="squaBox squaBox71 r0 r12" data="r12">
+					<span>跑到宵禁</span>
+				</div>
+				<div class="squaBox squaBox72 r0 r13" data="r13">
+					<span>运行保障</span>
+				</div>
+				<div class="lineRight lineR31">
+					<span class="lineW"></span><i class="triangle"></i>
+				</div>
+				<div class="brokenLine bL1">
+					<span class="lineW"></span><i class="triangle"></i><span class="lineD"></span>
+				</div>
+			</div>
+			<div class="lineDown line7">
+				<span class="lineW"></span><i class="triangle"></i>
+			</div>
+			<div class="nodeBox nodeBox8">
+				<div class="borderDashed box8 r0 r14"></div>
+				<span class="nodeText">TSAT&lt;EOBT&RDY&gt;TSAT</span>
+				<div class="squaBox squaBox8 r0 r14"  data-c="c4" data="r14">
+					<span>结合运行情况，<br>人工判定为：<br>1.空管<br>2.军事<br>3.天气<br>4.公司<br>5.机场<br>6.时刻<br>7.公共安全</span>
+				</div>
+				<div class="lineRight lineR8">
+					<span class="lineW"></span><i class="triangle"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

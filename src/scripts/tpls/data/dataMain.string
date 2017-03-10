@@ -1,0 +1,37 @@
+<ul class="menu">
+    <li><a href="javascript:;">数据资源管理</a></li>
+    <li><a href="javascript:;">数据服务管理</a></li>
+    <li><a href="javascript:;">数据资源目录</a></li>
+    <li><a href="javascript:;">数据处理综合</a></li>
+    <li><a href="javascript:;">平台综合监控</a></li>
+    <li><a href="javascript:;">用户权限管理</a></li>
+    <li><a href="javascript:;">系统权限管理</a></li>
+</ul>
+<ul class="list" id="list">
+    <div class="content">
+        <li class="item">数据源管理</li>
+        <ul class="item-list on">
+            <li><img src="./img/data/BackIcon.png" alt="">数据源接入申请</li>
+            <li><img src="./img/data/BackIcon.png" alt="">数据源接入审核</li>
+        </ul>
+        <li class="item">目录管理</li>
+        <li class="item">标签管理</li>
+        <li class="item">服务管理</li>
+        <li class="item">数据源管理</li>
+    </div>
+</ul>
+<div id="data-list">
+    <ul class="title">
+        <li>序列号</li>
+        <li>资源名称</li>
+        <li>数据库类型</li>
+        <li>部署地点</li>
+        <li>创建时间</li>
+        <li>数据拥有者</li>
+        <li>状态</li>
+    </ul>
+    <div id="main-list">
+        <div class="content">
+        </div>
+    </div>
+</div>

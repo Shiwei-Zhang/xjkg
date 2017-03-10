@@ -1,0 +1,533 @@
+.tcBox {
+    /*scrollbar style*/
+    ::-webkit-scrollbar/*整体部分*/
+    {
+        width: 2px;
+        height: 5px;
+    }
+    ::-webkit-scrollbar-track/*滑动轨道*/
+    {
+        /*-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);*/
+        /*border-radius: 0px;*/
+        /*background: rgba(0,0,0,0.1);*/
+    }
+    ::-webkit-scrollbar-thumb/*滑块*/
+    {
+        border-radius: 5px;
+        -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+        background: rgba(0, 0, 0, 0.2);
+    }
+    ::-webkit-scrollbar-thumb:hover/*滑块效果*/
+    {
+        border-radius: 5px;
+        -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+        background: rgba(0, 0, 0, 0.3);
+    }
+}
+
+.tcBox1 {
+    display: none;
+    //display: block;
+    margin: 0.3rem auto;
+    width: 7.65rem;
+    height: 9.3rem;
+    overflow: auto;
+    background-color: #0d152f;
+    border: 0.01rem solid #0794b9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    -webkit-user-select: none;
+    user-select: none;
+    .tcTitle {
+        height: 1.2rem;
+        width: 7.65rem;
+        line-height: 1.2rem;
+        text-align: center;
+        font-size: 16px;
+        color: #04cbf5;
+    }
+    .tcContiner {
+        width: 7.65rem;
+        height: 11rem;
+        margin-top: 0.2rem;
+    }
+}
+
+.squaBox {
+    position: absolute;
+    top: 0.2rem;
+    width: 0.9rem;
+    height: 0.56rem;
+    border: 0.02rem dashed #078eb3;
+    font-size: 12px;
+    color: #05b1d8;
+    cursor: pointer;
+    span {
+        display: inline-block;
+        width: 0.9rem;
+        height: 0.56rem;
+        line-height: 0.5rem;
+        text-align: center;
+    }
+}
+
+.circleBox {
+    position: absolute;
+    left: 2.13rem;
+    width: 1rem;
+    height: 0.42rem;
+    border: 0.02rem dashed #078eb3;
+    border-radius: 0.21rem;
+    font-size: 12px;
+    color: #05b1d8;
+    span {
+        display: inline-block;
+        width: 1rem;
+        height: 0.42rem;
+        line-height: 0.4rem;
+        text-align: center;
+    }
+}
+
+.tcContent .borderCon {
+    border: 0.01rem solid #3cd6f7;
+}
+
+.tcContent .dashedCon {
+    border: 1px dashed #3cd6f7;
+}
+
+.tcContent {
+    width: 4.97rem;
+    height: 100%;
+    margin: 0 1.34rem;
+    position: relative;
+    .borderSolid {
+        width: 0.83rem;
+        height: 0.83rem;
+        transform: rotate(135deg);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        border-radius: 0.04rem;
+        border: 0.01rem solid #3cd6f7;
+        /* position: absolute;
+     top: 0;
+     left: 0;*/
+    }
+    .borderDashed {
+        width: 0.83rem;
+        height: 0.83rem;
+        //          margin-top: 1.73rem;
+        transform: rotate(135deg);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        border-radius: 0.04rem;
+        border: 1px dashed #3cd6f7;
+        /* position: absolute;
+     top: 0;
+     left: 0;*/
+    }
+    .nodeBox {
+        position: absolute;
+        left: 0.2rem;
+        font-size: 0.12rem;
+        .nodeText {
+            position: absolute;
+            top: 0.2rem;
+            left: -0.1rem;
+            display: inline-block;
+            color: #3cd6f7;
+            height: 0.3rem;
+            width: 1rem;
+            word-break: break-all;
+            word-wrap: break-word;
+            line-height: 0.22rem;
+            text-align: center;
+        }
+    }
+    .nodeBox1 {
+        top: 0.3rem;
+        left: 0.2rem;
+    }
+    .nodeBox2 {
+        top: 2rem;
+    }
+    .nodeBox3 {
+        top: 3.7rem;
+    }
+    .nodeBox4 {
+        top: 8.4rem;
+    }
+    .nodeBox5 {
+        top: 6.5rem;
+    }
+    .nodeBox6 {
+        top: 10.5rem;
+    }
+    .nodeBox7 {
+        top: 15rem;
+    }
+    .nodeBox8 {
+        top: 16.8rem;
+    }
+}
+
+.lineDown {
+    position: absolute;
+    left: 0.61rem;
+    .lineW {
+        display: inline-block;
+        width: 0.02rem;
+        height: 0.27rem;
+        background-color: #3cd6f7;
+        position: absolute;
+        top: 0;
+    }
+    &:after {
+        position: absolute;
+        top: 0.1rem;
+        left: -0.2rem;
+        font-size: 12px;
+        color: #3cd6f7;
+        content: 'N';
+    }
+    .triangle {
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-left: 0.035rem solid transparent;
+        border-right: 0.035rem solid transparent;
+        border-top: 0.13rem solid #3cd6f7;
+        position: absolute;
+        top: 0.27rem;
+        left: -0.02rem;
+    }
+}
+
+.line1 {
+    top: 1.4rem;
+}
+
+.line2 {
+    top: 3.1rem;
+}
+
+.line3 {
+    top: 4.8rem;
+    .lineW {
+        height: 1.27rem;
+    }
+    .triangle {
+        top: 1.27rem;
+    }
+}
+
+.line4 {
+    top: 7.6rem;
+    .lineW {
+        height: 0.5rem;
+    }
+    .triangle {
+        top: 0.5rem;
+    }
+}
+
+.line5 {
+    top: 9.6rem;
+    .lineW {
+        height: 0.5rem;
+    }
+    .triangle {
+        top: 0.5rem;
+    }
+}
+
+.line6 {
+    top: 11.6rem;
+    .lineW {
+        height: 3.1rem;
+    }
+    .triangle {
+        top: 3.1rem;
+    }
+}
+
+.line7 {
+    top: 16rem;
+    .lineW {
+        height: 0.5rem;
+    }
+    .triangle {
+        top: 0.5rem;
+    }
+}
+
+.squaBox1 {
+    left: 2.62rem;
+}
+
+.squaBox2 {
+    left: 2.62rem;
+    /*border: 0.02rem solid #b30658;
+  background-image: radial-gradient(transparent, #b30658);*/
+}
+
+.squaBox31 {
+    left: 3.9rem;
+}
+
+.squaBox32 {
+    top: 0.98rem;
+    left: 3.9rem;
+}
+
+.squaBox33 {
+    top: 1.8rem;
+    left: 3.9rem;
+}
+
+.squaBox34 {
+    top: 2.6rem;
+    left: 3.9rem;
+}
+
+.squaBox35 {
+    top: 3.4rem;
+    left: 3.9rem;
+}
+
+.squaBox42 {
+    top: 0.98rem;
+    left: 3.9rem;
+}
+
+.squaBox41 {
+    left: 3.9rem;
+}
+
+.squaBox5 {
+    left: 2.62rem;
+}
+
+.squaBox72 {
+    top: 0.98rem;
+    left: 2.2rem;
+}
+
+.squaBox71 {
+    left: 2.2rem;
+}
+
+.squaBox8 {
+    left: 3.9rem;
+    width: 2rem;
+    height: 3rem;
+    span {
+        width: 2rem;
+        line-height: 0.33rem;
+    }
+}
+
+.circleBox31 {
+    top: 0.2rem;
+}
+
+.circleBox32 {
+    top: 0.98rem;
+}
+
+.circleBox33 {
+    top: 1.8rem;
+}
+
+.circleBox34 {
+    top: 2.6rem;
+}
+
+.circleBox41 {
+    top: 0.2rem;
+}
+
+.circleBox42 {
+    top: 0.98rem;
+}
+
+.lineRight {
+    position: absolute;
+    left: 0.61rem;
+    top: 0.43rem;
+    .lineW {
+        display: inline-block;
+        width: 0.3rem;
+        height: 0.02rem;
+        background-color: #3cd6f7;
+        position: absolute;
+        top: 0;
+    }
+    &:after {
+        position: absolute;
+        top: -0.3rem;
+        left: 0.2rem;
+        font-size: 12px;
+        color: #3cd6f7;
+        content: 'Y';
+    }
+    .triangle {
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-left: 0.035rem solid transparent;
+        border-right: 0.035rem solid transparent;
+        border-top: 0.13rem solid #3cd6f7;
+        border-top: 0.035rem solid transparent;
+        border-bottom: 0.035rem solid transparent;
+        border-left: 0.13rem solid #3cd6f7;
+        position: absolute;
+        top: -0.02rem;
+        left: 0.3rem;
+    }
+}
+
+.brokenLine {
+    position: absolute;
+    left: 0.61rem;
+    top: 0.43rem;
+    .lineW {
+        display: inline-block;
+        width: 0.3rem;
+        height: 0.02rem;
+        background-color: #3cd6f7;
+        position: absolute;
+        top: 0;
+    }
+    .triangle {
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-left: 0.035rem solid transparent;
+        border-right: 0.035rem solid transparent;
+        border-top: 0.13rem solid #3cd6f7;
+        border-top: 0.035rem solid transparent;
+        border-bottom: 0.035rem solid transparent;
+        border-left: 0.13rem solid #3cd6f7;
+        position: absolute;
+        top: -0.02rem;
+        left: 0.3rem;
+    }
+    .lineD {
+        display: inline-block;
+        width: 0.02rem;
+        height: 0.7rem;
+        background-color: #3cd6f7;
+        position: absolute;
+        top: -0.7rem;
+    }
+}
+
+.bL1 {
+    left: 1.5rem;
+    top: 1.2rem;
+}
+
+.bL2 {
+    left: 1.5rem;
+    top: 1.9rem;
+}
+
+.bL3 {
+    left: 1.51rem;
+    top: 2.7rem;
+}
+
+.bL4 {
+    .lineW {
+        width: 2.1rem;
+    }
+    .triangle {
+        left: 2.1rem;
+    }
+    left: 1.51rem;
+    top: 3.7rem;
+}
+
+.lineR1 {
+    left: 1.2rem;
+    .lineW {
+        width: 1.13rem;
+    }
+    .triangle {
+        left: 1.13rem;
+    }
+}
+
+.lineR2 {
+    left: 1.2rem;
+    .lineW {
+        width: 1.13rem;
+    }
+    .triangle {
+        left: 1.13rem;
+    }
+}
+
+.lineR31 {
+    left: 1.2rem;
+    .lineW {
+        width: 0.57rem;
+    }
+    .triangle {
+        left: 0.57rem;
+    }
+}
+
+.lineR32 {
+    left: 3.3rem;
+}
+
+.lineR33 {
+    top: 1.2rem;
+    left: 3.3rem;
+}
+
+.lineR34 {
+    top: 2rem;
+    left: 3.3rem;
+}
+
+.lineR35 {
+    top: 2.7rem;
+    left: 3.3rem;
+}
+
+.lineR8 {
+    left: 1.2rem;
+    .lineW {
+        width: 2.5rem;
+    }
+    .triangle {
+        left: 2.5rem;
+    }
+}
+
+.redBg {
+    border-color: #b30658 !important;
+    background-image: radial-gradient(transparent, #b30658);
+    color: rgba(217, 218, 222, .7)
+}
+
+.norBg {
+    border: 0.02rem dashed #078eb3;
+    background: rgba(13, 21, 47, .3);
+    color: #078eb3
+}
+
+.tcContent .borderCon {
+    border: 0.01rem solid #3cd6f7;
+}
+
+.tcContent .dashedCon {
+    border: 1px dashed #3cd6f7;
+}

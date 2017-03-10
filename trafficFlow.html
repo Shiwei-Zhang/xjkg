@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="dev/scripts/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<!--	<script src="dev/scripts/jquery.js" type="text/javascript" charset="utf-8"></script>-->
+		<!--<script src="china.js" type="text/javascript" charset="utf-8"></script>-->
+         <script src="dev/scripts/scrolling.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="dev/styles/Dcp.trafficFlow@dev.css" />
+		<script src="dev/scripts/Dcp.trafficFlow@dev.js" type="text/javascript" charset="utf-8"></script>
+		<script src="tw/sp.js" type="text/javascript" charset="utf-8"></script>
+
+		<script src="tw/echarts-all.js" type="text/javascript" charset="utf-8"></script>
+		<script src="tw/drew.js" type="text/javascript" charset="utf-8"></script>
+		<script src="My97DatePicker/WdatePicker.js"></script>
+		
+
+	</head>
+
+	<body>
+
+		<div class="box" style="background-image: url(img/indexImg/bgd.png);">
+			<div class="showSqure jz"></div>
+			<div class="boxDelayAndTraffic jz trafficBody">
+				<div class="topBox">
+					<div class="topLeft trafficLeft">
+						<ul>
+							<a href="trafficFlow.html"><li class='jtllbg'><span>交通流量</span></li></a>
+						
+							<a href="optimize.html"><li><span>流量预测</span></li></a>
+							<a href="delayAnalysis.html"><li><span>延误分析</span></li></a>
+							<a href="runState.html"><li><span>运行动态</span></li></a>
+						</ul>
+					</div>
+					<div class="topRight">
+
+						<div class="mapBox">
+							<!--<span class="scrollBar" id="scrollbar">
+								<i>fdsg</i>
+							</span>
+							<div class="line">
+								<img src="img/trafficPredictionImg/arrow.png"/>
+								
+							</div>-->
+							<div class="linez">
+								<div class="scrollBar" id="scrollbar">
+									<i class="pyl">00:00:00</i>
+								</div>
+							</div>
+							<div class="time" id="time">
+								
+								<div class="hk1">
+									<div class="timeHKtimt">
+										20:44
+									</div>
+								</div>
+								<div class="time1 timez">
+									<p>am2：00</p>
+									<span>|</span>
+									<span>|</span>
+								</div>
+								<div class="time2 timez">
+									<p>am6:00</p>
+									<span>|</span>
+									<span>|</span>
+								</div>
+								<div class="time3 timez">
+									<p>am10:00</p>
+									<span>|</span>
+									<span>|</span>
+								</div>
+								<div class="time4 timez">
+									<p>pm14:00</p>
+									<span>|</span>
+									<span>|</span>
+								</div>
+								
+								<div class="time5 timez">
+									<p>pm18:00</p>
+									<span>|</span>
+									<span>|</span>
+								</div>
+								<div class="time6 timez">
+									<p>pm22:00</p>
+									<span>|</span>
+								</div>
+							</div>
+							
+							<div id='mapChina'></div>
+						</div>
+						<input type="text" id="timer" class="Wdate" style="position: absolute; top: 1rem;right: -2rem;background-color: #0596d1;" />
+
+					</div>
+				</div>
+
+				<div class="bottomBox">
+
+				</div>
+			</div>
+
+		</div>
+
+	</body>
+
+</html>

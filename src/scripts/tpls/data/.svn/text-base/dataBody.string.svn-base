@@ -1,0 +1,20 @@
+<div class="box" id="box">
+    <div class="logo"></div>
+    <div class="btn-top">
+        <ul class="btn-group">
+            <li>新增数据源<img class="a" src="./img/data/import/add.png" alt=""></li>
+            <li>导入<img src="./img/data/import/import.png" alt=""></li>
+            <li>导出<img src="./img/data/import/export.png" alt=""></li>
+        </ul>
+    </div>
+    <ul class="top-right">
+        <li class="proud"><span></span>东北地区发改委</li>
+        <li class="msg"></li>
+        <li class="quit"></li>
+    </ul>
+    <div class="search-box">
+        <input type="text" id="search" placeholder="请输入关键字">
+    </div>
+    <div class="main">
+    </div>
+</div>

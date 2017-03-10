@@ -1,0 +1,1 @@
+require('./views/tc1.js');

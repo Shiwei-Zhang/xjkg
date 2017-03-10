@@ -1,0 +1,30 @@
+<div id="popDiv" class="dialog">
+	<div id="closeD" class="closeD"></div>
+	<div class="contentT">
+		<ul class="table_title">
+			<li>航班号</li>
+			<li>目的地</li>
+			<li>原EOBT</li>
+			<li>建议EOBT</li>
+			<li>当前状态</li>
+			<li>跑道</li>
+		</ul>
+		<div id="scroll3" style="width:100%;height: 5rem;">
+	        <div class="content">
+				<ul class="table_content">
+					<div id="tableTpl4">
+						<div class="liBox">
+							<li>航班号</li>
+							<li>目的地</li>
+							<li>原EOBT</li>
+							<li>建议EOBT</li>
+							<li>当前状态</li>
+							<li>跑道</li>
+						</div>
+					</div>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="bg" class="bg"></div>

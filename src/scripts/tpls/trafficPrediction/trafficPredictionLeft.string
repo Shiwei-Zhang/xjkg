@@ -1,0 +1,11 @@
+<div class="trafficLeft">
+    <div class="top">
+        <span>进港流量预测 2017-2-28</span>
+        <span>进港／离港日志</span>
+    </div>
+    <div class="bottom">
+        <div id="trafficEcharts1" class="trafficEcharts">echarts1</div>
+        <div id="trafficEcharts2" class="trafficEcharts">echarts2</div>
+        <div id="trafficEcharts3" class="trafficEcharts">echarts3</div>
+    </div>
+</div>

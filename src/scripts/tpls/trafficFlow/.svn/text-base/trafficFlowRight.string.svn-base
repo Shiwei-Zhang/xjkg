@@ -1,0 +1,11 @@
+<div class="topRight">
+<span class="scrollBar" id="scrollbar"></span>
+      <hr  class="line"/>
+      <div class="time" id="time"></div>
+	<div class="title">交通流量</div>
+
+	<div class="mapBox">
+		<div id='mapChina'></div>
+	</div>
+  
+</div>

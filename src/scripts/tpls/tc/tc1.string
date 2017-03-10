@@ -1,0 +1,111 @@
+
+<div class="tcBox">
+	<div class="tcTitle">
+		详细延误原因
+	</div>
+	<div class="tcContiner">
+		<div class="tcContent">
+			<div class="nodeBox nodeBox1">
+				<div class="borderSolid box1"></div>
+				<span class="nodeText">EOBT≠STD</span>
+				<div class="squaBox squaBox1">
+					<span>航司原因</span>
+				</div>
+				<div class="lineRight lineR1">
+					<span class="lineW"></span><i class="triangle"></i>
+				</div>
+			</div>
+			<div class="lineDown line1">
+				<span class="lineW"></span><i class="triangle"></i>
+			</div>
+			<div class="nodeBox nodeBox2">
+				<div class="borderSolid box2"></div>
+				<span class="nodeText">EOBT≠STD</span>
+				<div class="squaBox squaBox2">
+					<span>运行保障</span>
+				</div>
+				<div class="lineRight lineR1">
+					<span class="lineW"></span><i class="triangle"></i>
+				</div>
+			</div>
+			<div class="lineDown line2">
+				<span class="lineW"></span><i class="triangle"></i>
+			</div>
+			<div class="nodeBox nodeBox3">
+				<div class="borderDashed box3"></div>
+				<span class="nodeText">EOBT≠STD</span>
+				<div class="circleBox circleBox31">
+					<span>流控原因</span>
+				</div>
+				<div class="circleBox circleBox32">
+					<span>时刻原因</span>
+				</div>
+				<div class="squaBox squaBox31">
+					<span>流控原因</span>
+				</div>
+				<div class="squaBox squaBox32">
+					<span>时刻原因</span>
+				</div>
+				<div class="lineRight lineR31">
+					<span class="lineW"></span><i class="triangle"></i>
+				</div>
+				<div class="lineRight lineR32">
+					<span class="lineW"></span><i class="triangle"></i>
+				</div>
+				<div class="lineRight lineR33">
+					<span class="lineW"></span><i class="triangle"></i>
+				</div>
+				<div class="brokenLine bL1">
+					<span class="lineW"></span><i class="triangle"></i><span class="lineD"></span>
+				</div>
+			</div>
+			<div class="lineDown line3">
+				<span class="lineW"></span><i class="triangle"></i>
+			</div>
+			<div class="nodeBox nodeBox4">
+				<div class="borderDashed box4"></div>
+				<span class="nodeText">EOBT≠STD</span>
+				<div class="circleBox circleBox41">
+					<span>关联流控</span>
+				</div>
+				<div class="circleBox circleBox42">
+					<span>计划超容量</span>
+				</div>
+				<div class="squaBox squaBox31">
+					<span>流控原因</span>
+				</div>
+				<div class="squaBox squaBox41">
+					<span>流控原因</span>
+				</div>
+				<div class="squaBox squaBox42">
+					<span>时刻原因</span>
+				</div>
+				<div class="lineRight lineR31">
+					<span class="lineW"></span><i class="triangle"></i>
+				</div>
+				<div class="lineRight lineR32">
+					<span class="lineW"></span><i class="triangle"></i>
+				</div>
+				<div class="lineRight lineR33">
+					<span class="lineW"></span><i class="triangle"></i>
+				</div>
+				<div class="brokenLine bL1">
+					<span class="lineW"></span><i class="triangle"></i><span class="lineD"></span>
+				</div>
+			</div>
+			<div class="lineDown line4">
+				<span class="lineW"></span><i class="triangle"></i>
+			</div>
+			<div class="nodeBox nodeBox5">
+				<div class="borderDashed box5"></div>
+				<span class="nodeText">EOBT≠STD</span>
+				<div class="squaBox squaBox5">
+					<span>计划超容量</span>
+				</div>
+				<div class="lineRight lineR1">
+					<span class="lineW"></span><i class="triangle"></i>
+				</div>
+			</div>
+		<div>
+	<div>
+</div>

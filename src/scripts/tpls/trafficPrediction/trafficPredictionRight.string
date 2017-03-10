@@ -1,0 +1,49 @@
+<div class="trafficRight">
+    <div class="top">
+        <span>zwww</span>
+    </div>
+    <div class="bottom">
+        <div class="tabContainer">
+            <ul id="tab" class="tabHead">
+                <li id="1" class="select">航班计划时序</li>
+                <li id="2">进港/出港</li>
+            </ul>
+            <div class="tabPanel">
+                <div id="panel1" class="panel"></div>
+                <div id="panel2" class="panel">
+                    <div class="panelTop">
+                        <div class="list">
+                            <div class="content">CA1103</div>
+                            <div class="content">B1723</div>
+                            <div class="content">到达 9:20</div>
+                            <div class="content">起飞 5:00</div>
+                            <div class="content">ZWWW</div>
+                            <div class="content">ZBAA</div>
+                        </div>
+
+                        <div class="list">
+                            <div class="content">CA1103</div>
+                            <div class="content">B1723</div>
+                            <div class="content">到达 9:20</div>
+                            <div class="content">起飞 5:00</div>
+                            <div class="content">ZWWW</div>
+                            <div class="content">ZBAA</div>
+                        </div>
+
+                        <div class="list">
+                            <div class="content">CA1103</div>
+                            <div class="content">B1723</div>
+                            <div class="content">到达 9:20</div>
+                            <div class="content">起飞 5:00</div>
+                            <div class="content">ZWWW</div>
+                            <div class="content">ZBAA</div>
+                        </div>
+                    </div>
+                    <div class="panelBottom">
+                        <div>航班排序优化建议</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

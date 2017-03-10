@@ -1,0 +1,122 @@
+<div class="box" id="box">
+	<div class="showSqure jz">
+		<div class="lT1">
+			<img src="../../../../img/indexImg/lT1.png"/>
+		</div>
+		<div class="lT2">
+		</div>
+		<div class="lB1">
+			
+			<div class="divLeft">
+				<span class="marTop0"></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div class="divCenter">
+				<span class="marTop0"></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div class="divRight">
+				<span class="marTop0"></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<div class="lB2">
+			
+		</div>
+		<div class="rT1">
+			
+		</div>
+		<div class="rB1">
+			<img src="../../../../img/indexImg/rB1.png"/>
+		</div>
+	</div>
+		
+	<div class="centerBox">
+		<h1>数据融合平台</h1>
+		<div class="head">
+			
+		</div>
+		<div class="foot">
+			
+		</div>
+		
+		<div class="centerTop">
+			<p>
+			<span class="sp1">|</span><span>|</span><span>|</span><span>|</span><span>|</span><span>|</span><span>|</span><span>|</span><span>|</span><span>|</span>
+		    </p>
+		</div>
+		
+		<ul class="yuan">
+			<li class='jz'><img src="../../../../img/indexImg/center1.png" class="jz" /></li>
+			<li class='jz'><img src="../../../../img/indexImg/center25.png" class="jz" /></li>
+			<li class='jz'><img src="../../../../img/indexImg/center3.png" class="jz" /></li>
+			<li class='jz dcpText' id="dcpText"><img src="../../../../img/indexImg/DcpImg.png"  class="jz"/></li>
+		</ul>
+
+		<div class="centerD2 centerSmall">
+			<ul class="centerUl">
+				<li class="centerD2Li1 centerSmallactiveLi"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<div class="centerD3 centerSmall">
+			<ul class="centerUl">
+				<li class="centerD3Li1"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li class="centerSmallactiveLi"></li>
+			</ul>
+		</div>
+		<div class="centerD4 centerSmall">
+			<ul class="centerUl">
+				<li class="centerD4Li1 centerSmallactiveLi"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<div class="centerD5 centerSmall">
+			<ul class="centerUl">
+				<li class="centerD5Li1"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li class="centerSmallactiveLi"></li>
+			</ul>
+		</div>
+	<p class="centerBottom">
+		
+			<span class="sp1">|</span><span>|</span><span>|</span><span>|</span><span>|</span><span>|</span><span>|</span><span>|</span><span>|</span><span>|</span>
+		
+			
+		</p>
+
+	</div>
+
+	
+	
+</div>

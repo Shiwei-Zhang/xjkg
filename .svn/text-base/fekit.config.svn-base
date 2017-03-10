@@ -1,0 +1,29 @@
+{
+    "compiler": "modular",
+    "name": "zkf",
+    "version": "1.0.0",
+    "dependencies": {},
+    "alias": {},
+    "export": [
+    "scripts/Dcp.index.js",
+    "styles/Dcp.index.scss",
+    "scripts/Dcp.login.js",
+    "styles/Dcp.login.scss",
+    "scripts/Dcp.list.js",
+    "styles/Dcp.list.scss",
+    "scripts/Dcp.trafficFlow.js",
+    "styles/Dcp.trafficFlow.scss",
+    "scripts/Dcp.delayAnalysis.js",
+    "styles/Dcp.delayAnalysis.scss",
+    "scripts/Dcp.tc.js",
+    "styles/Dcp.tc.scss",
+    "scripts/Dcp.runState.js",
+    "styles/Dcp.runState.scss",
+    "scripts/Dcp.data.js",
+    "styles/Dcp.data.scss",
+    "scripts/Dcp.optimize.js",
+    "styles/Dcp.optimize.scss",
+     "scripts/Dcp.trafficPrediction.js",
+    "styles/Dcp.trafficPrediction.scss"
+    ]
+}

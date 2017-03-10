@@ -1,0 +1,174 @@
+.box {
+  background: url('../../img/trafficPredictionImg/bg.png');
+  background-size: 100% 100%;
+  background-color: #0d152f;
+  font-size: 18px;
+  color: #04CBF5;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  letter-spacing: 1px;
+  .boxTrafficPred {
+      width: 17.9rem;
+      height: 9.8rem;
+      .leftBox {
+          width: 12.1rem;
+          float: left;
+          height: 8.4rem;
+          position: relative;
+          top: 0.7rem;
+      }
+    .leftBox .trafficLeft {
+        position: relative;
+        top: 0.01rem;
+        width: 100%;
+        height: 100%;
+
+      .scrollBarBottom {
+        position: absolute;
+        bottom: 0.01rem;
+        left: 0.7rem;
+        z-index: 100;
+        width: 0.5rem;
+        height: 0.23rem;
+        background-color: #18d3fd;
+        cursor: pointer;
+      }
+    }
+
+    .leftBox .trafficLeft .bottom {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      #trafficEcharts2 {
+        top: 2.6rem
+      }
+      #trafficEcharts3 {
+        top: 5.2rem;
+      }
+    }
+
+    .leftBox .trafficLeft .bottom .trafficEcharts {
+        position: absolute;
+        overflow: hidden;
+        width: 100%;
+        height: 2.6rem;
+
+    }
+    .leftBox .trafficLeft span:nth-child(2) {
+        float: right;
+        margin-right: 0.44rem;
+    }
+
+    .rightBox {
+        width: 4.5rem;
+        float: left;
+        position: relative;
+        left: 1.4rem;
+        height: 100%;
+    }
+    .rightBox .trafficRight {
+        position: relative;
+        top: 1rem;
+        height: 100%;
+    }
+    .rightBox .trafficRight .top {
+      position: absolute;
+      top: 0.01rem;
+    }
+    .rightBox .trafficRight .bottom {
+      position: relative;
+      top: 0.4rem;
+    }
+    .rightBox .trafficRight .bottom ul {
+        list-style: none;
+        position: absolute;
+        left: -0.6rem;
+        overflow: hidden;
+    }
+
+    .rightBox .trafficRight .bottom .tabContainer{
+      //width: 100%;
+      height: 7.5rem;
+      margin: 0;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid #04CBF5;
+      border-radius: 4px;
+      width: 4.3rem;
+    }
+
+    .rightBox .trafficRight .bottom .tabHead{
+      //width: 100%;
+      width: 4.5rem;
+      top: -0.3rem;
+      left: -0.7rem;
+      position: absolute;
+      .select {
+        color: #04CBF5;
+      }
+    }
+
+    .rightBox .trafficRight .bottom .tabHead li{
+      float:left;
+      height: 0.8rem;
+      line-height: 0.8rem;
+      width: 2.2rem;
+      overflow: hidden;
+      text-align: center;
+      border: 1px solid #04CBF5;
+      color: #08779A;
+      cursor: pointer;
+    }
+
+    .rightBox .trafficRight .bottom .tabPanel {
+      position: relative;
+      top: 0.7rem;
+      left: 0.01rem;
+      -webkit-transition:all 0.3s linear;//切换过渡效果
+
+      .panel {
+        position: absolute;
+        overflow: hidden;
+        width: 4.5rem;
+        height: 7rem;
+        top: 0.1rem;
+        padding-left: 0.1rem;
+        font-size: 14px;
+      }
+      #panel1 {
+        left: 0;
+      }
+      #panel2 {
+        left: 100%;
+        .list {
+          position: relative;
+          left: -0.1rem;
+          overflow: hidden;
+          background-color: rgba(4,202,245,0.09);
+          padding: 0.15rem 0;
+          margin-bottom: 0.05rem;
+        }
+        .content {
+          text-indent: 0.5rem;
+          float: left;
+          width: 2.2rem;
+          padding: 0.02rem 0;
+        }
+
+        .panelBottom div{
+          position: absolute;
+          left: -0.1rem;
+          bottom: 0.3rem;
+          width: 100%;
+          background-color: rgba(4,202,245,0.09);
+          padding: 0.15rem 0;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

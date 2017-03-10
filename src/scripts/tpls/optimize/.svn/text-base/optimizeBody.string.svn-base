@@ -1,0 +1,23 @@
+<div class="showSqure">
+	<ul class="top-title">
+	</ul>
+	<div class="opt-left">
+		<!--<ul>
+							<a href="trafficFlow.html"><li class='jtllbg'><span>交通流量</span></li></a>
+						
+							<a href="optimize.html"><li><span>流量预测</span></li></a>
+							<a href="delayAnalysis.html"><li><span>延误分析</span></li></a>
+							<a href="runState.html"><li><span>运行动态</span></li></a>
+						</ul>-->
+	</div>
+	<div class="cavas-mid">
+	</div>
+	<div class="opt-right">
+	</div>
+	<div class="plBox">
+
+	</div>
+	<div class="mask">
+
+	</div>
+</div>

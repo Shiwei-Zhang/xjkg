@@ -1,0 +1,5 @@
+@import './util/animation.scss';
+@import './util/common.scss';
+@import './module/indexBody.scss';
+@import './module/leftIndex.scss';
+@import './module/rightIndex.scss';

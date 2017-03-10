@@ -1,0 +1,29 @@
+<script id="tableBoxTpl1" type="text/html">
+<div class="content">
+    <table class="listContainer" border="0" cellspacing="0" cellpadding="0">
+    {{each data as value i}}
+        <tr>
+            <td>{{value.sectorName}}</td>
+            <td>{{value.planeCount}}</td>
+            <!--<td>{{value[0]}}</td>
+            <td>{{value[1]}}</td>-->
+           
+        </tr>
+    {{/each}}
+    </table>
+</div>
+</script>
+<script id="tableBoxTpl2" type="text/html">
+<div class="content">
+    <table class="listContainer listContainer2" border="0" cellspacing="0" cellpadding="0">
+    {{each data as value i}}
+        <tr>
+            <td>{{value.segmentName}}</td>
+            <td>{{value.planeCount}}</td>
+            <td>{{value.busyDegree}}</td>
+           
+        </tr>
+        {{/each}}
+    </table>
+    </div>
+</script>

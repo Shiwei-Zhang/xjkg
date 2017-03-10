@@ -1,0 +1,16 @@
+<script id="Tpl-data1" type="text/html">
+    <div class="content">
+        {{each delayItemList as value i}}
+        <ul>
+            <li>{{value.flightNumber}}</li>
+            <li>{{value.airlineCompany}}</li>
+            <li>{{value.segment}}</li>
+            <li>{{value.airdrome}}</li>
+            <li data-cause="{{value.r}}">{{value.delayCause}}</li>
+            <li>{{value.fallTakeTime}}</li>
+            <li>{{value.takeOffTime}}</li>
+            <li><a href="javascript:;" class='showD'>查看</a></li>
+        </ul>
+        {{/each}}
+    </div>
+</script>

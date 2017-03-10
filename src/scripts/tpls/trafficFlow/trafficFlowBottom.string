@@ -1,0 +1,32 @@
+<div class="bottomList  trafficList">
+	<div class="trafficList_title">
+		<p class="List_title">扇区繁忙情况</p>
+		<ul class="table_title">
+			<li >扇区名称</li>
+			<li >飞机数量</li>
+		</ul>
+	</div>
+	<!--<span class="scrollBarBottom" id="scrollBarOne"></span>
+	<span class="scrollBarRight"id="scrollBarTwo"></span>-->
+	<div class="tableBox" id="tableBox1">
+
+	</div>
+	
+	
+</div>
+<div class="bottomList  trafficList">
+	<div class="trafficList_title">
+		<p class="List_title">航段繁忙情况</p>
+		<ul class="table_title table_title2">
+			<li >航段名称</li>
+			<li >飞机数量</li>
+			<li >繁忙度</li>
+		</ul>
+	</div>
+	<!--<span class="scrollBarBottom" id="scrollBarThree"></span>
+	<span class="scrollBarRight"id="scrollBarFour"></span>-->
+	<div class="tableBox" id="tableBox2">
+	</div>
+	
+	
+</div>

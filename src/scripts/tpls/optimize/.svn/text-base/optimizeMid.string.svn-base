@@ -1,0 +1,14 @@
+<div class="select">
+	<select name="lidu" id="lidu">
+		<option value="15">15分钟</option>
+		<option value="30">30分钟</option>
+		<option value="60">60分钟</option>
+	</select>
+</div>
+<div class="lidu"></div>
+<div class="info">进港流量预测</div>
+<div class="trafficEcharts" id="trafficEcharts1"></div>
+<div class="info">出港流量统计</div>
+<div class="trafficEcharts" id="trafficEcharts2"></div>
+<div class="info">机场流量预测</div>
+<div class="trafficEcharts" id="trafficEcharts3"></div>

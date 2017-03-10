@@ -1,0 +1,252 @@
+ul li {
+  list-style: none;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+html, body, .box {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+
+}
+
+.box {
+  background-color: #0d152f;
+   // background-image: url(../../img/indexImg/bgd.png);
+  background-size: 100% 100%;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  #box {
+    overflow-x: scroll;
+  }
+}
+
+.boxSrollY {
+  overflow-y: scroll;
+}
+
+.jz {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.pBox {
+  width: 4.5rem;
+  height: 6.5rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.lbx {
+  position: absolute;
+  width: 1.28rem;
+  height: 2.03rem;
+  border: 0.08rem solid #05b9e2;
+  border-left: 0;
+  border-right: 0;
+}
+
+.ndiv2, .ndiv3, .ndiv4, .ndiv5 {
+  width: 1.27rem;
+  height: 1.27rem;
+  position: absolute;
+  //border: 1px solid yellow;
+}
+
+.iconN {
+  width: 0.48rem;
+  height: 0.49rem;
+}
+
+.iconN img {
+  width: 100%;
+  height: 100%;
+}
+
+.ndiv2 {
+  left: -0.415rem;
+  top: 0.18rem;
+  border-left: 0.08rem solid #05b9e2;
+  -webkit-transform: rotateZ(30deg);
+  -moz-transform: rotateZ(30deg); /* for Firefox */
+  -ms-transform: rotateZ(30deg); /* for IE */
+  -o-transform: rotateZ(30deg);
+  transform: rotateZ(30deg);
+}
+
+.ndiv3 {
+  left: -0.415rem;
+  bottom: 0.18rem;
+  border-left: 0.08rem solid #05b9e2;
+  -webkit-transform: rotateZ(-30deg);
+  -moz-transform: rotateZ(-30deg);
+  -ms-transform: rotateZ(-30deg);
+  -o-transform: rotateZ(-30deg);
+  transform: rotateZ(-30deg);
+}
+
+.ndiv4 {
+  left: 0.35rem;
+  top: 0.18rem;
+  border-right: 0.08rem solid #05b9e2;
+  -webkit-transform: rotateZ(-30deg);
+  -moz-transform: rotateZ(-30deg);
+  -ms-transform: rotateZ(-30deg);
+  -o-transform: rotateZ(-30deg);
+  transform: rotateZ(-30deg);
+}
+
+.ndiv5 {
+  left: 0.35rem;
+  bottom: 0.18rem;
+  border-right: 0.08rem solid #05b9e2;
+  -webkit-transform: rotateZ(30deg);
+  -moz-transform: rotateZ(30deg);
+  -ms-transform: rotateZ(30deg);
+  -o-transform: rotateZ(30deg);
+  transform: rotateZ(30deg);
+}
+
+.fg {
+  position: absolute;
+  width: 2.55rem;
+  height: 2.18rem;
+  line-height: 2.18rem;
+  background: url("../../../../img/indexImg/liBg.png") no-repeat 100% 100%;
+  background-size: 100% 100%;
+  //     -webkit-animation:bgLbx 8s;
+  //  -moz-animation:bgLbx 8s cubic-bezier(0.175,0.885,0.32,1.275);
+  //  animation:bgLbx 8s cubic-bezier(0.175,0.885,0.32,1.275);
+  //
+
+  .fgP1 {
+    width: 1.05rem;
+    font-size: 0.54rem;
+    font-weight: bolder;
+    line-height: 0.3rem;
+    margin: 0.2rem auto;
+    color: #05b9e2;
+    // position: absolute;
+  }
+  &.fblbx1 .fgP1 {
+    border-top: 0.08rem solid #05b9e2;
+    text-align: right;
+  }
+  &.fblbx2 .fgP1 {
+    border-top: 0.08rem solid #05b9e2;
+    text-align: left;
+  }
+  &.fblbx3 .fgP1 {
+    border-bottom: 0.08rem solid #05b9e2;
+    text-align: right;
+    margin-top: 1.55rem;
+  }
+  &.fblbx4 .fgP1 {
+    border-bottom: 0.08rem solid #05b9e2;
+    text-align: left;
+    margin-top: 1.55rem;
+  }
+  .fgP2 {
+    font-size: 0.34rem;
+    //          font-weight: bolder;
+    font-family: "bodoni mt";
+    color: #fff;
+    text-align: center;
+  }
+  .fgD {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+
+    height: 0.1rem;
+    width: 1.28rem;
+    padding: 0;
+    text-align: center;
+  }
+  &.fblbx1 .fgD {
+    bottom: 0.15rem;
+  }
+  &.fblbx2 .fgD {
+    bottom: 0.15rem;
+  }
+
+  &.fblbx3 .fgD {
+    top: 0.15rem;
+  }
+  &.fblbx4 .fgD {
+    top: 0.15rem;
+  }
+  .img {
+    position: absolute;
+    margin: auto;
+    padding: 0;
+    width: 0.47rem;
+    height: 0.31rem;
+  }
+  &.fblbx1 .img, &.fblbx2 .img {
+    background: url(../../../../img/indexImg/icon41.png) no-repeat;
+    background-size: 100% 100%;
+  }
+  &.fblbx3 .img, &.fblbx4 .img {
+    background: url(../../../../img/indexImg/icon4.png) no-repeat;
+    background-size: 100% 100%;
+  }
+  &.fblbx1 .img {
+    bottom: 0.3rem;
+    left: 1.2rem;
+  }
+  &.fblbx2 .img {
+    bottom: 0.3rem;
+    left: 0.8rem;
+  }
+
+  &.fblbx3 .img {
+    top: 0.3rem;
+    left: 1.22rem;
+  }
+  &.fblbx4 .img {
+    top: 0.3rem;
+    left: 0.9rem;
+
+  }
+  .fgD li {
+    float: left;
+    width: 0.07rem;
+    height: 0.07rem;
+    margin: 0 0.025rem;
+    background-color: #05b9e2;
+  }
+  .fgD .fgDLi1 {
+    margin-left: 0.18rem;
+  }
+}
+
+/*mask layer*/
+.mask {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0.7;
+  z-index: 4;
+}
+
+

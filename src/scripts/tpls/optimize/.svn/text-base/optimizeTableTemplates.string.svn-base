@@ -1,0 +1,12 @@
+<script id="tpl-data2" type="text/html">
+        {{each list as value i}}
+            <div class="liBox">
+                <li>{{value[0]}}</li>
+                <li>{{value[1]}}</li>
+                <li>{{value[2]}}</li>
+                <li>{{value[3]}}</li>
+                <li>{{value[4]}}</li>
+                <li>{{value[5]}}</li>
+            </div>
+        {{/each}}
+</script>
