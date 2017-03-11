@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>航班时序图</title>
+
+        <script type="text/javascript" src="../js-lib/jquery-3.1.1.js"></script>
+
+        <!-- ionicons -->
+        <link rel="stylesheet" type="text/css" href="../css/ionicons/css/ionicons.css" />
+
+        <style type="text/css">
+
+            /** 时间柱 **/
+            .groupTimeList{
+                float: left;
+                width: 100px;
+                border: 1px solid #FF0000;
+            }
+            /** 时间标题 **/
+            .groupTimeTitle{
+                height: 12px;
+                width: 100%;
+                font-size: 12px;
+            }
+
+            /** 5分钟 组， 如果高度不够，修改此高度 **/
+            .fiveMinuteGroup{
+                height: 37px;
+
+            }
+            /** 每5分钟 时间显示 **/
+            .timeItem{
+                width: 25px;
+                float: left;
+            }
+            /** 00 **/
+            .timeTitle{
+                width: 25px;
+                height: 10px;
+                font-size: 10px;
+            }
+            /** 1分钟标识 **/
+            .timePart{
+                width: 25px;
+                height: 8px;
+            }
+
+            .minuteLabel{
+                width: 23px;
+                height: 6px;
+                border-bottom: 3px solid #04CBF5;
+            }
+
+            .statusItem{
+                width: 73px;
+                float: left;
+            }
+            /** 00 **/
+            .statusLabel{
+                width:200px;
+            }
+            .statusTitle{
+                padding: 0;
+                margin: 0;
+                width: 73px;
+                height: 10px;
+                font-size: 8px;
+            }
+            /** 1分钟标识 **/
+            .statusPart{
+                width: 73px;
+                height: 8px;
+                font-size: 7px;
+            }
+
+            .triangleItem{
+                width: 6px;
+                height: 5px;
+                float: left;
+                padding: 0;
+                margin: 0;
+            }
+            .font-red{
+                color: #0000FF;
+            }
+
+            .font-blue{
+                color: #08789C;
+            }
+
+            .font-green{
+                color: #00FF00;
+            }
+
+        </style>
+
+        <script type="text/javascript">
+
+            /** 当前时间 **/
+            var nowTime = "21:30:20";
+
+            function addTimeStatus(status, theTime){
+                var theTime = '21:54:35';
+
+                var statusHtml = "<div class=\"ion-arrow-right-b font-green triangleItem\"></div>";
+
+                var nowHour = nowTime.substring(0, 2);
+                var nowMinute = nowTime.substring(3, 5);
+
+                var paramHour = theTime.substring(0, 2);
+                var paramMinute = theTime.substring(3, 5);
+
+                var hourIndex = paramHour - nowHour;
+
+                /** 拿到当前小时的组 **/
+                var groupTimeList = $(".groupTimeList");
+                var thisGroupTime = groupTimeList[hourIndex];
+
+                /** 拿到当前 5分钟的组 **/
+                var minGroupIndex = Math.floor(paramMinute / 5);
+                console.log("minGroupIndex | " + minGroupIndex);
+
+                var thisFiveGroup = null;
+                var yuShu = paramMinute % 5;
+                if(yuShu == 0){
+                    var fiveList = $(".fiveMinuteGroup", thisGroupTime);
+
+                    var thisFiveGroup = fiveList[minGroupIndex - 1];
+                    
+                }else{
+                    var fiveList = $(".fiveMinuteGroup", thisGroupTime);
+
+                    var thisFiveGroup = fiveList[minGroupIndex];
+                }
+
+                var statusItem = $(".statusLabel", thisFiveGroup)[yuShu];
+
+                $(statusItem).append(statusHtml);
+
+            }
+            $(document).ready(function() {
+                //alert("init ... ");
+                addTimeStatus();
+                addTimeStatus();
+                addTimeStatus();
+                addTimeStatus();
+                addTimeStatus();
+                addTimeStatus();
+                addTimeStatus();
+                addTimeStatus();
+                addTimeStatus();
+
+            });
+        </script>
+
+    </head>
+    <body>
+
+        <h1>航班时序</h1>
+
+        <div style="height: 700px;">
+            <!-- 时间柱 -->
+            <div class="groupTimeList">
+                <div class="groupTimeTitle">05/1300</div>
+                <!-- 下面开始每5分钟 -->
+                <div class="fiveMinuteGroup">
+                    <div class="timeItem">
+                        <div class="timeTitle">00</div>
+                        <div class="timePart">
+                            <div class="minuteLabel"></div>
+                        </div>
+                        <div class="timePart">
+                            <div class="minuteLabel"></div>
+                        </div>
+                        <div class="timePart">
+                            <div class="minuteLabel"></div>
+                        </div>
+                        <div class="timePart">
+                            <div class="minuteLabel"></div>
+                        </div>
+                    </div>
+                    <div class="statusItem">
+                        <div class="statusLabel">
+                            <div class="statusTitle">
+                                <div class="ion-arrow-right-b font-red triangleItem"></div>
+                                <div class="ion-arrow-left-b font-red triangleItem"></div>
+                            </div>
+                        </div>
+                        <div class="statusLabel ">
+                            <div class="statusPart">
+                                <div class="ion-arrow-right-b font-red triangleItem"></div>
+                                <div class="ion-arrow-right-b font-red triangleItem"></div>
+                            </div>
+                        </div>
+                        <div class="statusLabel ">
+                            <div class="statusPart">
+                                <div class="ion-arrow-right-b font-red triangleItem"></div>
+                                <div class="ion-arrow-right-b font-red triangleItem"></div>
+                            </div>
+                        </div>
+                        <div class="statusLabel ">
+                            <div class="statusPart">
+                                <div class="ion-arrow-right-b font-red triangleItem"></div>
+                                <div class="ion-arrow-right-b font-red triangleItem"></div>
+                            </div>
+                        </div>
+                        <div class="statusLabel ">
+                            <div class="statusPart">
+                                <div class="ion-arrow-right-b font-red triangleItem"></div>
+                                <div class="ion-arrow-right-b font-red triangleItem"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fiveMinuteGroup">
+                    <div class="timeItem">
+                        <div class="timeTitle">00</div>
+                        <div class="timePart">
+                            <div class="minuteLabel"></div>
+                        </div>
+                        <div class="timePart">
+                            <div class="minuteLabel"></div>
+                        </div>
+                        <div class="timePart">
+                            <div class="minuteLabel"></div>
+                        </div>
+                        <div class="timePart">
+                            <div class="minuteLabel"></div>
+                        </div>
+                    </div>
+                    <div class="statusItem">
+                        <div class="statusLabel statusTitle">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                            <div class="ion-arrow-left-b font-red triangleItem"></div>
+                        </div>
+                        <div class="statusLabel statusPart">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+
+                        </div>
+                        <div class="statusLabel statusPart">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                            <div class="ion-arrow-left-b font-red triangleItem"></div>
+
+                        </div>
+                        <div class="statusLabel statusPart">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                        </div>
+                        <div class="statusLabel statusPart">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fiveMinuteGroup">
+                    <div class="timeItem">
+                        <div class="timeTitle">00</div>
+                        <div class="timePart">
+                            <div class="minuteLabel"></div>
+                        </div>
+                        <div class="timePart">
+                            <div class="minuteLabel"></div>
+                        </div>
+                        <div class="timePart">
+                            <div class="minuteLabel"></div>
+                        </div>
+                        <div class="timePart">
+                            <div class="minuteLabel"></div>
+                        </div>
+                    </div>
+                    <div class="statusItem">
+                        <div class="statusLabel statusTitle">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                            <div class="ion-arrow-left-b font-red triangleItem"></div>
+                        </div>
+                        <div class="statusLabel statusPart">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+
+                        </div>
+                        <div class="statusLabel statusPart">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                            <div class="ion-arrow-left-b font-red triangleItem"></div>
+
+                        </div>
+                        <div class="statusLabel statusPart">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                        </div>
+                        <div class="statusLabel statusPart">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fiveMinuteGroup">
+                    <div class="timeItem">
+                        <div class="timeTitle">00</div>
+                        <div class="timePart">
+                            <div class="minuteLabel"></div>
+                        </div>
+                        <div class="timePart">
+                            <div class="minuteLabel"></div>
+                        </div>
+                        <div class="timePart">
+                            <div class="minuteLabel"></div>
+                        </div>
+                        <div class="timePart">
+                            <div class="minuteLabel"></div>
+                        </div>
+                    </div>
+                    <div class="statusItem">
+                        <div class="statusLabel statusTitle">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                            <div class="ion-arrow-left-b font-red triangleItem"></div>
+                        </div>
+                        <div class="statusLabel statusPart">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+
+                        </div>
+                        <div class="statusLabel statusPart">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                            <div class="ion-arrow-left-b font-red triangleItem"></div>
+
+                        </div>
+                        <div class="statusLabel statusPart">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                        </div>
+                        <div class="statusLabel statusPart">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fiveMinuteGroup">
+                    <div class="timeItem">
+                        <div class="timeTitle">00</div>
+                        <div class="timePart">
+                            <div class="minuteLabel"></div>
+                        </div>
+                        <div class="timePart">
+                            <div class="minuteLabel"></div>
+                        </div>
+                        <div class="timePart">
+                            <div class="minuteLabel"></div>
+                        </div>
+                        <div class="timePart">
+                            <div class="minuteLabel"></div>
+                        </div>
+                    </div>
+                    <div class="statusItem">
+                        <div class="statusLabel statusTitle">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                            <div class="ion-arrow-left-b font-red triangleItem"></div>
+                        </div>
+                        <div class="statusLabel statusPart">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+
+                        </div>
+                        <div class="statusLabel statusPart">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                            <div class="ion-arrow-left-b font-red triangleItem"></div>
+
+                        </div>
+                        <div class="statusLabel statusPart">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                        </div>
+                        <div class="statusLabel statusPart">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fiveMinuteGroup">
+                    <div class="timeItem">
+                        <div class="timeTitle">00</div>
+                        <div class="timePart">
+                            <div class="minuteLabel"></div>
+                        </div>
+                        <div class="timePart">
+                            <div class="minuteLabel"></div>
+                        </div>
+                        <div class="timePart">
+                            <div class="minuteLabel"></div>
+                        </div>
+                        <div class="timePart">
+                            <div class="minuteLabel"></div>
+                        </div>
+                    </div>
+                    <div class="statusItem">
+                        <div class="statusLabel statusTitle">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                            <div class="ion-arrow-left-b font-red triangleItem"></div>
+                        </div>
+                        <div class="statusLabel statusPart">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+
+                        </div>
+                        <div class="statusLabel statusPart">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                            <div class="ion-arrow-left-b font-red triangleItem"></div>
+
+                        </div>
+                        <div class="statusLabel statusPart">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                        </div>
+                        <div class="statusLabel statusPart">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fiveMinuteGroup">
+                    <div class="timeItem">
+                        <div class="timeTitle">00</div>
+                        <div class="timePart">
+                            <div class="minuteLabel"></div>
+                        </div>
+                        <div class="timePart">
+                            <div class="minuteLabel"></div>
+                        </div>
+                        <div class="timePart">
+                            <div class="minuteLabel"></div>
+                        </div>
+                        <div class="timePart">
+                            <div class="minuteLabel"></div>
+                        </div>
+                    </div>
+                    <div class="statusItem">
+                        <div class="statusLabel statusTitle">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                            <div class="ion-arrow-left-b font-red triangleItem"></div>
+                        </div>
+                        <div class="statusLabel statusPart">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+
+                        </div>
+                        <div class="statusLabel statusPart">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                            <div class="ion-arrow-left-b font-red triangleItem"></div>
+
+                        </div>
+                        <div class="statusLabel statusPart">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                        </div>
+                        <div class="statusLabel statusPart">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fiveMinuteGroup">
+                    <div class="timeItem">
+                        <div class="timeTitle">00</div>
+                        <div class="timePart">
+                            <div class="minuteLabel"></div>
+                        </div>
+                        <div class="timePart">
+                            <div class="minuteLabel"></div>
+                        </div>
+                        <div class="timePart">
+                            <div class="minuteLabel"></div>
+                        </div>
+                        <div class="timePart">
+                            <div class="minuteLabel"></div>
+                        </div>
+                    </div>
+                    <div class="statusItem">
+                        <div class="statusLabel statusTitle">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                            <div class="ion-arrow-left-b font-red triangleItem"></div>
+                        </div>
+                        <div class="statusLabel statusPart">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+
+                        </div>
+                        <div class="statusLabel statusPart">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                            <div class="ion-arrow-left-b font-red triangleItem"></div>
+
+                        </div>
+                        <div class="statusLabel statusPart">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                        </div>
+                        <div class="statusLabel statusPart">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fiveMinuteGroup">
+                    <div class="timeItem">
+                        <div class="timeTitle">00</div>
+                        <div class="timePart">
+                            <div class="minuteLabel"></div>
+                        </div>
+                        <div class="timePart">
+                            <div class="minuteLabel"></div>
+                        </div>
+                        <div class="timePart">
+                            <div class="minuteLabel"></div>
+                        </div>
+                        <div class="timePart">
+                            <div class="minuteLabel"></div>
+                        </div>
+                    </div>
+                    <div class="statusItem">
+                        <div class="statusLabel statusTitle">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                            <div class="ion-arrow-left-b font-red triangleItem"></div>
+                        </div>
+                        <div class="statusLabel statusPart">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+
+                        </div>
+                        <div class="statusLabel statusPart">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                            <div class="ion-arrow-left-b font-red triangleItem"></div>
+
+                        </div>
+                        <div class="statusLabel statusPart">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                        </div>
+                        <div class="statusLabel statusPart">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fiveMinuteGroup">
+                    <div class="timeItem">
+                        <div class="timeTitle">00</div>
+                        <div class="timePart">
+                            <div class="minuteLabel"></div>
+                        </div>
+                        <div class="timePart">
+                            <div class="minuteLabel"></div>
+                        </div>
+                        <div class="timePart">
+                            <div class="minuteLabel"></div>
+                        </div>
+                        <div class="timePart">
+                            <div class="minuteLabel"></div>
+                        </div>
+                    </div>
+                    <div class="statusItem">
+                        <div class="statusLabel statusTitle">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                            <div class="ion-arrow-left-b font-red triangleItem"></div>
+                        </div>
+                        <div class="statusLabel statusPart">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+
+                        </div>
+                        <div class="statusLabel statusPart">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                            <div class="ion-arrow-left-b font-red triangleItem"></div>
+
+                        </div>
+                        <div class="statusLabel statusPart">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                        </div>
+                        <div class="statusLabel statusPart">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fiveMinuteGroup">
+                    <div class="timeItem">
+                        <div class="timeTitle">00</div>
+                        <div class="timePart">
+                            <div class="minuteLabel"></div>
+                        </div>
+                        <div class="timePart">
+                            <div class="minuteLabel"></div>
+                        </div>
+                        <div class="timePart">
+                            <div class="minuteLabel"></div>
+                        </div>
+                        <div class="timePart">
+                            <div class="minuteLabel"></div>
+                        </div>
+                    </div>
+                    <div class="statusItem">
+                        <div class="statusLabel statusTitle">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                            <div class="ion-arrow-left-b font-red triangleItem"></div>
+                        </div>
+                        <div class="statusLabel statusPart">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+
+                        </div>
+                        <div class="statusLabel statusPart">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                            <div class="ion-arrow-left-b font-red triangleItem"></div>
+
+                        </div>
+                        <div class="statusLabel statusPart">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                        </div>
+                        <div class="statusLabel statusPart">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fiveMinuteGroup">
+                    <div class="timeItem">
+                        <div class="timeTitle">00</div>
+                        <div class="timePart">
+                            <div class="minuteLabel"></div>
+                        </div>
+                        <div class="timePart">
+                            <div class="minuteLabel"></div>
+                        </div>
+                        <div class="timePart">
+                            <div class="minuteLabel"></div>
+                        </div>
+                        <div class="timePart">
+                            <div class="minuteLabel"></div>
+                        </div>
+                    </div>
+                    <div class="statusItem">
+                        <div class="statusLabel statusTitle">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                            <div class="ion-arrow-left-b font-red triangleItem"></div>
+                        </div>
+                        <div class="statusLabel statusPart">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+
+                        </div>
+                        <div class="statusLabel statusPart">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                            <div class="ion-arrow-left-b font-red triangleItem"></div>
+
+                        </div>
+                        <div class="statusLabel statusPart">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                        </div>
+                        <div class="statusLabel statusPart">
+                            <div class="ion-arrow-right-b font-red triangleItem"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <!-- 时间柱 -->
+            <div class="groupTimeList">
+
+
+            </div>
+
+        </div>
+
+
+    </body>
+</html>

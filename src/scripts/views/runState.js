@@ -1,9 +1,10 @@
+//var $ = require('../utils/jquery-3.1.1.min.js');
 var common = require('../utils/common.util.js');
 var template = require('../utils/template.js');
 var runStateBody = require('../tpls/runState/runStateBody.string');
 var runStateLeft = require('../tpls/runState/runStateLeft.string');
 var templates = require('../tpls/runState/runStateTemplates.string');
-var $ = require('../utils/jquery-3.1.1.min.js');
+
 //require('../utils/scrolling.js');
 $(function () {
     common.renderBody($('body'), runStateBody);
@@ -11,7 +12,9 @@ $(function () {
     common.append($('body'), templates);
     //common.append($('.rightBox'),runStateRight);
 
-    var airData = [{
+    var airData =
+            [
+        {
             "ARCID": "GCR7511",
             "ADES": "ZWWW/ZWAK",
             "ETA": "Jan 17, 2017 5:12:00 AM",
@@ -3691,9 +3694,7 @@ $(function () {
             "delayReason": 0,
             "ATN": "B1365",
             "RANDOMTIME": 0
-        }]
-
-        ;
+        }];
 
     function putInObj(childObj, parObj) {
         for (var i in childObj) {
@@ -3711,6 +3712,9 @@ $(function () {
         timeArr.h = oDate.getHours();
         timeArr.min = oDate.getMinutes();
         timeArr.s = oDate.getSeconds();
+        timeArr.h = timeArr.h < 10 ? ("0" + timeArr.h) : timeArr.h;
+        timeArr.min = timeArr.min < 10 ? ("0" + timeArr.min) : timeArr.min;
+        timeArr.s = timeArr.s < 10 ? ("0" + timeArr.s) : timeArr.s;
         return timeArr
     };
 
@@ -3775,9 +3779,7 @@ $(function () {
             var arrList1 = [];
             var arrList2 = [];
             var eIndex = 1;
-            var aIndex = 1;
             var hIndex = 1;
-            var mIndex = 1;
             var tipL1 = null;
             var tipL2 = null;
             var tipL3 = null;
@@ -3832,7 +3834,6 @@ $(function () {
     var createDom = function () {
 
         var timeDom = '',
-            lineDom = '',//时间刻度线
             timeNow = '';
         for (i = 0; i < timeList.length; i++) {
             var eWidth1 = ((timeList[i].eTimeH2 - timeList[i].eTimeH1) * 400 + timeList[i].eTimeM2 * (400 / 60) - timeList[i].eTimeM1 * (400 / 60)) / 100 + 'rem';
@@ -3859,68 +3860,74 @@ $(function () {
             } else if (tColor == 0) {
                 domColor = '#b8e986'
             }
-            timeDom = timeDom + '<div class=\"d1 hs child\" style=\"margin-left:' + domLeft1 + ';background-color:' + domColor + ';width: ' + eWidth + ';\"><span class="modOne01" style=\"width:' + eWidth1 + ';border-right:0.02rem solid #fff\">' + eTimeM1.toFixed(0) + '分钟 <i class="eibtW">EIBT</i><i class="eobtW">EOBT</i><i class="EIBT">' + timeList[i].eTimeH1 + ':' + timeList[i].eTimeM1 + '</i><i class="EOBT">' + timeList[i].eTimeH2 + ':' + timeList[i].eTimeM2 + '</i></span><span class="modOne02" style=\"width:' + eWidth2 + ';left: ' + eval(parseFloat(eWidth1) + 0.01) + 'rem;\"><i class="ETOT">' + timeList[i].eTimeH3 + ':' + timeList[i].eTimeM3 + '</i><i class="etotW">ETOT</i>' + eTimeM2.toFixed(0) + '分钟</span></div>'
-                + '<div class=\"d2 bd child\" style=\"margin-left:' + domLeft2 + ';border-color:' + domColor + ';width: ' + aWidth + ';\"><span class="modTwo01" style=\"color:' + domColor + ';width:' + aWidth1 + ';border-right: 0.01rem solid ' + domColor + '\">' + aTimeM1.toFixed(0) + '分钟</span><span class="modTwo02" style=\"color:' + domColor + ';width:' + aWidth2 + ';left: ' + aWidth1 + ';border-right: 0.01rem solid ' + domColor + '\">' + aTimeM2.toFixed(0) + '分钟</span><span class="modTwo03" style=\"color:' + domColor + ';width:' + aWidth3 + ';left: ' + eval(parseFloat(aWidth1) + parseFloat(aWidth2)) + 'rem;\">' + aTimeM3.toFixed(0) + '分钟</span></div>';
+            timeDom = timeDom + '<div timeE=\"' + timeList[i].eTimeH3 + ':' + timeList[i].eTimeM3 + '\" class=\"d1 hs child\" style=\"margin-left:' + domLeft1 + ';background-color:' + domColor + ';width: ' + eWidth + ';\"><span class="modOne01" style=\"width:' + eWidth1 + ';border-right:0.02rem solid #9c9c9c\">' + eTimeM1.toFixed(0) + '分钟 <i class="eibtW">EIBT</i><i class="eobtW">EOBT</i><i class="EIBT">' + timeList[i].eTimeH1 + ':' + timeList[i].eTimeM1 + '</i><i class="EOBT">' + timeList[i].eTimeH2 + ':' + timeList[i].eTimeM2 + '</i></span><span class="modOne02" style=\"width:' + eWidth2 + ';left: ' + eval(parseFloat(eWidth1) + 0.01) + 'rem;\"><i class="ETOT">' + timeList[i].eTimeH3 + ':' + timeList[i].eTimeM3 + '</i><i class="etotW">ETOT</i>' + eTimeM2.toFixed(0) + '分钟</span></div>'
+                + '<div timeE=\"' + timeList[i].aTimeH4 + ':' + timeList[i].aTimeM4 + '\" class=\"d2 bd child\" style=\"margin-left:' + domLeft2 + ';border-color:' + domColor + ';width: ' + aWidth + ';\"><span class="modTwo01" style=\"color:' + domColor + ';width:' + aWidth1 + ';border-right: 0.01rem solid ' + domColor + '\">' + aTimeM1.toFixed(0) + '分钟</span><span class="modTwo02" style=\"color:' + domColor + ';width:' + aWidth2 + ';left: ' + aWidth1 + ';border-right: 0.01rem solid ' + domColor + '\">' + aTimeM2.toFixed(0) + '分钟</span><span class="modTwo03" style=\"color:' + domColor + ';width:' + aWidth3 + ';left: ' + eval(parseFloat(aWidth1) + parseFloat(aWidth2)) + 'rem;\">' + aTimeM3.toFixed(0) + '分钟</span></div>';
         }
 
         timeNow += '<div class="timeNow" id="timeNow"></div>';
         $('.gttZzt').append(timeDom, timeNow);
         $('#timeNow').css('height', $('.gttZzt').height());
         positionNow();
+        changeColor();
     };
-    /*$('#scroll').scrolling({ backgroundColor: '#0a3f5e', borderRadius: '0.03rem',height:'0.05rem',width:'4rem' }, { backgroundColor: '#0396c2', borderRadius: '0.03rem',height:'0.05rem'}, false);
-     */
+
+    //遍历gttZzt子元素 改变色值
+    function timeForM(time) {
+        var h=time.split(':')[0];
+        var m=time.split(':')[1];
+        return Number(h)*60+Number(m);
+        //return 100
+    }
+    var changeColor=function () {
+        var $childEle=$('.gttZzt').children('.child');
+        $childEle.each(function (index,item) {
+            var domTime=item.getAttribute("timeE");
+            var time1=timeForM(domTime+'');//dom元素终点时间
+            var time2=timeForM(timeArr.h+':'+timeArr.m);//当前时间
+
+            console.log(domTime)
+            //console.log(time2)
+            if(time1<time2 && $(item).hasClass('d1')){
+                $(item).css('backgroundColor','#707070')
+            }else if(time1<time2 && $(item).hasClass('d2')){
+                $(item).css({
+                    'borderColor':'#707070',
+                    'color':'#707070'
+                });
+                $(item).find('span').css({
+                    'color':'#707070',
+                    'borderColor':'#9c9c9c'
+                }
+                )
+            }
+
+            //$(item).css('backgroundColor','#707070')
+
+        })
+    };
     //先执行一次
     setTimeout(function () {
         clockFormat(new Date());
         createDom();
-        //console.log('okkk')
+        timeLeft = (timeArr.h * 400 + timeArr.min * (400 / 60) + timeArr.s * (400 / 360)) / 100 + 'rem';
+        $('#timeNow').css('left', timeLeft);
+
     }, 30);
 
 
-    //10秒刷新一次
+    //30秒刷新一次
     clearInterval(timer);
     var timeLeft;
     var timer = setInterval(function () {
         clockFormat(new Date());
         //createDom();
         timeLeft = (timeArr.h * 400 + timeArr.min * (400 / 60) + timeArr.s * (400 / 360)) / 100 + 'rem';
-        $('#timeNow').css('left', timeLeft)
-        // console.log(timeArr.h+':'+timeArr.min+':'+timeArr.s)
-    }, 5000);
+        $('#timeNow').css('left', timeLeft);
+    }, 30000);
 
 
     //航班号数据
     var dataList = getdata2(airData);
-    /*var dataL = {
-     list: [
-     ['CA103 B1721', '到达', '8:20'],
-     ['ZWWW/ZWAK', '起飞', '10:20'],
-     ['CA103 B1722', '到达', '8:20'],
-     ['ZWWW/ZWAK', '到达', '8:20'],
-     ['CA103 B1722', '到达', '8:20'],
-     ['CA103 B1722', '到达', '8:20'],
-     ['CA103 B1722', '到达', '8:20'],
-     ['CA103 B1722', '到达', '8:20'],
-     ['CA103 B1723', '到达', '8:20'],
-     ['CA103 B1721', '到达', '8:20'],
-     ['CA103 B1722', '起飞', '8:20'],
-     ['CA103 B1722', '到达', '8:20'],
-     ['CA103 B1722', '到达', '8:20'],
-     ['CA103 B1721', '到达', '8:20'],
-     ['CA103 B1722', '起飞', '8:20'],
-     ['CA103 B1722', '到达', '8:20'],
-     ['CA103 B1722', '到达', '8:20'],
-     ['CA103 B1722', '起飞', '8:20'],
-     ['CA103 B1722', '到达', '8:20'],
-     ['CA103 B1721', '到达', '8:20'],
-     ['CA103 B1722', '起飞', '8:20'],
-     ['CA103 B1722', '到达', '8:30'],
-     ['CA103 B1722', '到达', '8:20'],
-     ['CA103 B1722', '起飞', '8:20'],
-     ['CA103 B1722', '到达', '8:20']
-     ]
-     };*/
 
     var html = template('tpl-data', dataList);
     document.getElementById('tableTpl2').innerHTML = html;

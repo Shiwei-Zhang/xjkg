@@ -435,7 +435,7 @@ $(function() {
             var datas = [];
             for (var g = 0; g < firstObjData.length; g++) {
                 var index = timeData.indexOf(firstObjData[g].time);
-                if (index > 0) {
+                if (index >= 0) {
                     datas[index] = firstObjData[g].number;
                 }
             }

@@ -26,6 +26,9 @@ has-props
 
 cce70df0-b4a3-4a49-9254-c68c61d17b07
 
+test
+dir
+
 .project
 file
 
@@ -273,40 +276,6 @@ yuesq
 
 4506
 
-delayAnalysis.html
-file
-
-
-
-
-2017-03-10T08:32:33.027086Z
-57e2940623e08b52654c4249fffa0a00
-2017-03-10T02:53:06.392027Z
-1332
-yuesq
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-629
-
 environment.yaml
 file
 
@@ -340,6 +309,40 @@ yuesq
 
 
 91
+
+delayAnalysis.html
+file
+
+
+
+
+2017-03-10T08:32:33.027086Z
+57e2940623e08b52654c4249fffa0a00
+2017-03-10T02:53:06.392027Z
+1332
+yuesq
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+629
 
 fekit.config
 file
