@@ -1,10 +1,11 @@
-var $ = require('../utils/jquery-3.1.1.min.js');
+
 var common = require('../utils/common.util.js');
 var template = require('../utils/template.js');
 var runStateBody = require('../tpls/runState/runStateBody.string');
 var runStateLeft = require('../tpls/runState/runStateLeft.string');
 var templates = require('../tpls/runState/runStateTemplates.string');
-require('../utils/scrolling.js');
+var $ = require('../utils/jquery-3.1.1.min.js');
+//require('../utils/scrolling.js');
 $(function () {
     common.renderBody($('body'), runStateBody);
     common.append($('.leftBox'), runStateLeft);
@@ -3849,13 +3850,17 @@ $(function () {
         timeNow+='<div class="timeNow" id="timeNow"></div>';
         $('.gttZzt').append(timeDom, timeNow);
         $('#timeNow').css('height',$('.gttZzt').height());
-
+        positionNow();
     };
     /*$('#scroll').scrolling({ backgroundColor: '#0a3f5e', borderRadius: '0.03rem',height:'0.05rem',width:'4rem' }, { backgroundColor: '#0396c2', borderRadius: '0.03rem',height:'0.05rem'}, false);
 */
     //先执行一次
-    clockFormat(new Date());
-    createDom();
+    setTimeout(function () {
+        clockFormat(new Date());
+        createDom();
+
+    },30);
+
 
     //10秒刷新一次
     clearInterval(timer);
@@ -3865,9 +3870,8 @@ $(function () {
         //createDom();
         timeLeft=(timeArr.h* 400 + timeArr.min * (400 / 60)+timeArr.s * (400 / 360)) / 100 + 'rem';
         $('#timeNow').css('left',timeLeft)
+
     },5000);
-
-
 
 
     //航班号数据
@@ -3917,9 +3921,16 @@ $(function () {
         $('#tableTpl2').css('top',moveH);
 
     });
-    /*$('.clBtn').click=function () {
 
-    }
-    $('.clBtn').click();*/
+
+    var positionNow=function () {
+        clockFormat(new Date());
+        //console.log($('#gtt').height());//6988
+        var nowLeft=timeArr.h* (6988/24) + timeArr.min * (6988/(24*60));
+        document.getElementById('gtt').scrollLeft=nowLeft+200;
+       //document.getElementById('gtt').scrollTop=timeArr.h* (15125/24) + timeArr.min * (15125/(24*60));
+        document.getElementById('gtt').scrollTop=(15125/6988)*nowLeft;
+    };
+
 
 });
