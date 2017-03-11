@@ -272,7 +272,7 @@
             color: #0d152f;
           }
           .modOne01{
-              &:after{
+              /*&:after{
                 position: absolute;
                 top:0;
                 right: 0.1rem;
@@ -281,12 +281,46 @@
                 font-size: 0.12rem;
                 color: #0d152f;
                 z-index: 10;
+            }*/
+            .eobtW{
+              display: none;
+              position: absolute;
+              top:0;
+              right: 0.1rem;
+              line-height: 0.22rem;
+              font-size: 0.12rem;
+              color: #0d152f;
+              z-index: 10;
+              font-style: normal;
             }
-            .EIBT{
+            .EOBT{
+              display: inline-block;
+              position: absolute;
+              top:0;
+              right: 0.1rem;
+              line-height: 0.22rem;
+              font-size: 0.12rem;
+              color: #0d152f;
+              z-index: 10;
+              font-style: normal;
+            }
+            .eibtW{
+              display: none;
               position: absolute;
               top:0;
               left:0.4rem;
+              height: 0.22rem;
+              text-align: center;
+              line-height: 0.22rem;
+              font-size: 0.12rem;
+              font-style: normal;
+              color: #0d152f;
+            }
+            .EIBT{
               display: inline-block;
+              position: absolute;
+              top:0;
+              left:0.4rem;
               height: 0.22rem;
               text-align: center;
               line-height: 0.22rem;
@@ -295,6 +329,13 @@
               color: #0d152f;
             }
           }
+          .modOne01:hover .EIBT,.modOne01:hover .EOBT{
+            display: none;
+          }
+          .modOne01:hover .eibtW,.modOne01:hover .eobtW{
+            display: inline-block;
+          }
+
           .modOne02{
             text-align: right;
            /* &:before{
@@ -307,7 +348,37 @@
               color: #fff;
               z-index: 10;
             }*/
+            .etotW{
+              display: none;
+              position: absolute;
+              top:0;
+              left:0.4rem;
+              height: 0.22rem;
+              text-align: center;
+              line-height: 0.22rem;
+              font-size: 0.12rem;
+              font-style: normal;
+              color: #0d152f;
+            }
+            .ETOT{
+              display: inline-block;
+              position: absolute;
+              top:0;
+              left:0.4rem;
+              height: 0.22rem;
+              text-align: center;
+              line-height: 0.22rem;
+              font-size: 0.12rem;
+              font-style: normal;
+              color: #0d152f;
+            }
 
+          }
+          .modOne02:hover .ETOT{
+            display: none;
+          }
+          .modOne02:hover .etotW{
+            display: inline-block;
           }
           .modTwo01,.modTwo02,.modTwo03{
             position: absolute;
@@ -315,7 +386,6 @@
             left:0;
             display: inline-block;
             height: 0.22rem;
-            //border-right:0.01rem solid red;
             font-size: 0.12rem;
             text-align: center;
             color: #fff;
@@ -336,7 +406,7 @@
         .d1 {
           //margin: 0.1rem 0 0.15rem 0;
           margin-bottom: 0.19rem;
-          &:before{
+          /*&:before{
             position: absolute;
             top:0;
             left:0;
@@ -345,7 +415,7 @@
             font-size: 0.12rem;
             color: #0d152f;
             z-index: 10;
-          }
+          }*/
         }
         .d2 {
           //margin: 0.1rem 0 0.2rem 0;
