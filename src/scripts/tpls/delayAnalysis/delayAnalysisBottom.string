@@ -529,10 +529,10 @@
                 </select>
             </li>
             <li>
-                <input type="text" placeholder="离港开始时间" id="startTime" class="Wdate" />
+                <input type="text" placeholder="离港开始时间" id="startTime" class="Wdate xjkg-wdate" />
             </li>
             <li>
-                <input type="text" placeholder="离港结束时间" id="endTime" class="Wdate" />
+                <input type="text" placeholder="离港结束时间" id="endTime" class="Wdate xjkg-wdate" />
             </li>
             <li>
                 <button type="button" id="doSearch">重新检索</button>

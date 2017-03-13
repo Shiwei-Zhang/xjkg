@@ -175,7 +175,8 @@ body {
     .opt-left  {
     width: 4.27rem;
     height: 8rem;
-    padding-top: 0.6rem;
+    margin-top: -0.5rem;
+//  padding-top: 0.6rem;
     overflow: hidden;
     float: left;
     .dList {

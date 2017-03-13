@@ -193,8 +193,8 @@ body,
 
 .boxRunState .leftBox {
   width: 4.27rem;
-  height: 8rem;
-  padding-top: 0.6rem;
+  height: 6rem;
+  padding-top: 0.2rem;
   overflow: hidden;
   float: left;
 }
@@ -397,22 +397,35 @@ body,
   color: #0d152f;
 }
 
-.boxRunState .rightBox .gttBox .gttZzt .child .modOne01:after {
+.boxRunState .rightBox .gttBox .gttZzt .child .modOne01 .eobtW {
+  display: none;
   position: absolute;
   top: 0;
   right: 0.1rem;
   line-height: 0.22rem;
-  content: 'EOBT';
   font-size: 0.12rem;
   color: #0d152f;
   z-index: 10;
+  font-style: normal;
 }
 
-.boxRunState .rightBox .gttBox .gttZzt .child .modOne01 .EIBT {
+.boxRunState .rightBox .gttBox .gttZzt .child .modOne01 .EOBT {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0.1rem;
+  line-height: 0.22rem;
+  font-size: 0.12rem;
+  color: #0d152f;
+  z-index: 10;
+  font-style: normal;
+}
+
+.boxRunState .rightBox .gttBox .gttZzt .child .modOne01 .eibtW {
+  display: none;
   position: absolute;
   top: 0;
   left: 0.4rem;
-  display: inline-block;
   height: 0.22rem;
   text-align: center;
   line-height: 0.22rem;
@@ -421,8 +434,63 @@ body,
   color: #0d152f;
 }
 
+.boxRunState .rightBox .gttBox .gttZzt .child .modOne01 .EIBT {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0.4rem;
+  height: 0.22rem;
+  text-align: center;
+  line-height: 0.22rem;
+  font-size: 0.12rem;
+  font-style: normal;
+  color: #0d152f;
+}
+
+.boxRunState .rightBox .gttBox .gttZzt .child .modOne01:hover .EIBT, .boxRunState .rightBox .gttBox .gttZzt .child .modOne01:hover .EOBT {
+  display: none;
+}
+
+.boxRunState .rightBox .gttBox .gttZzt .child .modOne01:hover .eibtW, .boxRunState .rightBox .gttBox .gttZzt .child .modOne01:hover .eobtW {
+  display: inline-block;
+}
+
 .boxRunState .rightBox .gttBox .gttZzt .child .modOne02 {
   text-align: right;
+}
+
+.boxRunState .rightBox .gttBox .gttZzt .child .modOne02 .etotW {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0.4rem;
+  height: 0.22rem;
+  text-align: center;
+  line-height: 0.22rem;
+  font-size: 0.12rem;
+  font-style: normal;
+  color: #0d152f;
+}
+
+.boxRunState .rightBox .gttBox .gttZzt .child .modOne02 .ETOT {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0.4rem;
+  height: 0.22rem;
+  text-align: center;
+  line-height: 0.22rem;
+  font-size: 0.12rem;
+  font-style: normal;
+  color: #0d152f;
+}
+
+.boxRunState .rightBox .gttBox .gttZzt .child .modOne02:hover .ETOT {
+  display: none;
+}
+
+.boxRunState .rightBox .gttBox .gttZzt .child .modOne02:hover .etotW {
+  display: inline-block;
 }
 
 .boxRunState .rightBox .gttBox .gttZzt .child .modTwo01, .boxRunState .rightBox .gttBox .gttZzt .child .modTwo02, .boxRunState .rightBox .gttBox .gttZzt .child .modTwo03 {
@@ -454,17 +522,6 @@ body,
 
 .boxRunState .rightBox .gttBox .gttZzt .d1 {
   margin-bottom: 0.19rem;
-}
-
-.boxRunState .rightBox .gttBox .gttZzt .d1:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  line-height: 0.22rem;
-  content: 'EIBT';
-  font-size: 0.12rem;
-  color: #0d152f;
-  z-index: 10;
 }
 
 .boxRunState .rightBox .gttBox .gttZzt .d2 {

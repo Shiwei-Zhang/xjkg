@@ -7,7 +7,7 @@ runState.js
 K 25
 svn:wc:ra_dav:version-url
 V 86
-/svn/tarot/!svn/ver/1332/XJDemo/zwa/src/main/webapp/xjkg/src/scripts/views/runState.js
+/svn/tarot/!svn/ver/1385/XJDemo/zwa/src/main/webapp/xjkg/src/scripts/views/runState.js
 END
 trafficFlow.js
 K 25
@@ -61,5 +61,5 @@ delayAnalysis.js
 K 25
 svn:wc:ra_dav:version-url
 V 91
-/svn/tarot/!svn/ver/1358/XJDemo/zwa/src/main/webapp/xjkg/src/scripts/views/delayAnalysis.js
+/svn/tarot/!svn/ver/1384/XJDemo/zwa/src/main/webapp/xjkg/src/scripts/views/delayAnalysis.js
 END

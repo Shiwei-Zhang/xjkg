@@ -7,7 +7,7 @@ delayBody.string
 K 25
 svn:wc:ra_dav:version-url
 V 104
-/svn/tarot/!svn/ver/1332/XJDemo/zwa/src/main/webapp/xjkg/src/scripts/tpls/delayAnalysis/delayBody.string
+/svn/tarot/!svn/ver/1384/XJDemo/zwa/src/main/webapp/xjkg/src/scripts/tpls/delayAnalysis/delayBody.string
 END
 delayAnalysisLeft.string
 K 25
@@ -37,5 +37,5 @@ delayAnalysisBottom.string
 K 25
 svn:wc:ra_dav:version-url
 V 114
-/svn/tarot/!svn/ver/1332/XJDemo/zwa/src/main/webapp/xjkg/src/scripts/tpls/delayAnalysis/delayAnalysisBottom.string
+/svn/tarot/!svn/ver/1384/XJDemo/zwa/src/main/webapp/xjkg/src/scripts/tpls/delayAnalysis/delayAnalysisBottom.string
 END

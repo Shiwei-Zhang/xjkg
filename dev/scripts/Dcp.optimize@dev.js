@@ -582,7 +582,7 @@ if (typeof module !== "undefined") module.exports = window.QTMPL["optimizeLeft"]
 
 ;(function(__context){
     var module = {
-        id : "fdbde5eed45d083bc327e2956c3f1023" ,
+        id : "53dcad6a918181776acd1dfcaa35a0ed" ,
         filename : "optimize.js" ,
         exports : {}
     };
@@ -640,7 +640,7 @@ $(function() {
         dataZoom: { show: true, bottom: 1 }
     };
 
-    var iTime1, iTime2, iTme3;
+    var iTime1, iTime2, iTime3;
 
     // 获取当前时间 航班排序时间
     var nDate = new Date();
@@ -654,7 +654,18 @@ $(function() {
         $('#dl' + n + ' .replace').replaceWith('<dt class="replace">' + (nDay + '/' + hour + '00')  + '</dt>');
     }
 
-    getProposalData(getCurrentDate(), '15');
+    getAllData();
+    function getAllData() {
+        iTime1 && clearTimeout(iTime1);
+        iTime2 && clearTimeout(iTime2);
+        iTime3 && clearTimeout(iTime3);
+
+        var selected = $('#lidu').val();
+        getProposalData(getCurrentDate(), selected);
+        getRightData(getCurrentDate(), selected);
+        getData(getCurrentDate(), '1', selected);
+    }
+
     // 获取优化建议数据
     function getProposalData(theTime, granule) {
         $.ajax({
@@ -706,7 +717,6 @@ $(function() {
         iTime1 = setTimeout(function() {getProposalData(getCurrentDate(), granule)}, 5000);
     }
 
-    getRightData(getCurrentDate(), '15');
     // 获取右侧数据
     function getRightData(theTime, granule) {
         $.ajax({
@@ -847,15 +857,7 @@ $(function() {
     // 粒度选择事件
     $('#lidu').on('change', onSelectChange);
     function onSelectChange() {
-        var selected = $('select option:selected').val();
-        // TODO: '11:16:30'换成 getCurrentDate()
-        iTime1 && clearTimeout(iTime1);
-        iTime2 && clearTimeout(iTime2);
-        iTime3 && clearTimeout(iTime3);
-        getData(getCurrentDate(), '1', selected);
-        getRightData(getCurrentDate(), selected);
-        getProposalData(getCurrentDate(), selected);
-
+        getAllData();
     }
 
 
@@ -868,7 +870,7 @@ $(function() {
     });
 
     // 定义滚动条
-    $('#scroll').scrolling({ backgroundColor: '#0a3f5e', borderRadius: '0.03rem',height:'0.05rem',width:'4rem' }, { backgroundColor: '#0396c2', borderRadius: '0.03rem',height:'0.05rem'}, true);
+    $('#scroll').scrolling({ backgroundColor: '#0a3f5e', borderRadius: '0.03rem',height:'0.1rem',width:'4rem' }, { backgroundColor: '#0396c2', borderRadius: '0.03rem',height:'0.1rem'}, true);
     
     // 获取当前时间 秒数是5的倍数
     function getCurrentDate() {
@@ -892,7 +894,6 @@ $(function() {
         return hours + ':' + minutes + ':' + seconds;
     }
     // TODO: '11:16:30'换成 getCurrentDate()
-    getData(getCurrentDate(), '1', '15');
 	// 获取后端数据
     function getData(theTime, type, granule) {
 
@@ -1025,7 +1026,7 @@ $(function() {
             var datas = [];
             for (var g = 0; g < firstObjData.length; g++) {
                 var index = timeData.indexOf(firstObjData[g].time);
-                if (index > 0) {
+                if (index >= 0) {
                     datas[index] = firstObjData[g].number;
                 }
             }
@@ -1112,7 +1113,8 @@ $(function() {
                         return '';
                     },
                     realtime : true,
-                    height: 15,
+                    height: 20,
+                    bottom: -10,
                     start : 0,
                     end: 60,
                     backgroundColor: 'rgba(4,202,245,0.70)',
@@ -1212,12 +1214,12 @@ $(function() {
 
     //缩放窗口事件
     var resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
-    window.addEventListener(resizeEvt, initChart, onSelectChange, false);
+    window.addEventListener(resizeEvt, getAllData, onSelectChange, false);
 })
 
 
     })( module.exports , module , __context );
-    __context.____MODULES[ "fdbde5eed45d083bc327e2956c3f1023" ] = module.exports;
+    __context.____MODULES[ "53dcad6a918181776acd1dfcaa35a0ed" ] = module.exports;
 })(this);
 
 
@@ -1230,7 +1232,7 @@ $(function() {
     if( !__context.____MODULES ) { __context.____MODULES = {}; }
     var r = (function( exports , module , global ){
 
-    __context.____MODULES['fdbde5eed45d083bc327e2956c3f1023']
+    __context.____MODULES['53dcad6a918181776acd1dfcaa35a0ed']
 
     })( module.exports , module , __context );
     __context.____MODULES[ "c4407b6eec8d4ebf20e83d26a3b6fc8a" ] = module.exports;

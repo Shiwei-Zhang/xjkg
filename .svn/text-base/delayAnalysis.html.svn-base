@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="dev/styles/Dcp.delayAnalysis@dev.css" />
     <script src="dev/scripts/Dcp.delayAnalysis@dev.js" type="text/javascript" charset="utf-8"></script>
     <script src="My97DatePicker/WdatePicker.js"></script>
-    <title>延误分析1</title>
+    <title>延误分析</title>
 </head>
 
 <body>

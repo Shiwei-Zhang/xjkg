@@ -44,7 +44,7 @@
   .leftBox {
     width: 4.27rem;
     height: 6rem;
-    padding-top: 2rem;
+    padding-top: 0.2rem;
     overflow: hidden;
     float: left;
     .dList {
@@ -199,48 +199,6 @@
       margin: 0;
       width: 96rem;
       height: 10rem;
-      //background-color: yellow;
-      //overflow: hidden;
-      /*.time {
-        padding: 0;
-        margin: 0;
-        width: 120rem;
-        height: 0.5rem;
-        overflow: hidden;
-      }
-      ul {
-        padding: 0;
-        margin: 0;
-        width: 120rem;
-        height: 0.5rem;
-        overflow: hidden;
-        background: red;
-        li {
-          float: left;
-          width: 5rem;
-          height: 0.5rem;
-          font-size: 0.16rem;
-          color: #04cbf5;
-          line-height: 0.5rem;
-          position: relative;
-          &:before{
-            position: absolute;
-            top:0;
-            left:0.3rem;
-            width: 0.14rem;
-            height: 0.14rem;
-            line-height: 0.22rem;
-            content: '1';
-            font-size: 0.12rem;
-            color: #fff;
-            z-index: 10;
-            background: url(../../img/runStateImg/timeIcon.png);
-            background-size: 100% 100%;
-          }
-        }
-      }*/
-
-
 
       .gttZzt {
         width: 96rem;

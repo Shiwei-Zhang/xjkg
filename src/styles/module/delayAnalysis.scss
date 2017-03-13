@@ -1,7 +1,7 @@
 .box {
     .delayList {
         width: 18rem;
-        height: 3rem;
+        height: 2.7rem;
         margin-top: 0.58rem;
         max-width: 18rem;
         max-height: 3rem;
@@ -23,7 +23,7 @@
             font-size: 0.32rem;
             color: #18d3fd;
             line-height: 0.6rem;
-            top: -0.3rem;
+            top: -0.2rem;
             left: 6rem;
             .container-zhu {
                 height: 100%;
@@ -35,13 +35,14 @@
                     font-size: 0.2rem;
                     font-weight: normal;
                     padding: 0;
-                    width: 100%;
+                    width: 1.7rem;
                     height: 0.5rem;
                     margin-top: 0.1rem;
                     border: 0.01rem #05b9e2 solid;
                     outline: none;
                     background-color: rgba(0, 0, 0, 0);
                     text-indent: 0.2rem;
+                    background-image: url(../../img/delayAndTraffic/z-date.png);
                 }
             }
         }
@@ -156,6 +157,7 @@
                     color: #fff;
                     text-indent: 0.13rem;
                     background-color: rgba(13, 28, 54, 1);
+                    background: url(../../img/delayAndTraffic/ys.png) no-repeat scroll right #0D1C36;
                 }
                 button {
                     background-color: #0D1C36;

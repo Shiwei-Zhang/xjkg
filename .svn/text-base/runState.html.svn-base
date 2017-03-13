@@ -2,8 +2,9 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>运行动态</title>
 		<link rel="stylesheet" type="text/css" href="dev/styles/Dcp.runState@dev.css"/>
+		<script src="tw/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="dev/scripts/Dcp.runState@dev.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>

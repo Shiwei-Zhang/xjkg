@@ -3812,22 +3812,44 @@ $(function () {
             dataL.list.push(arrList1, arrList2);
         }
         return dataL;
-        //console.log(dataL.list)
     }
 
     //添加 timeDom lineDom timeNow
     var timeList = getData1(airData);
-    //$('.gttZzt').html(timeList)
 
 
     //设置滚动位置
     var positionNow = function () {
-        clockFormat(new Date());
-        //console.log($('#gtt').height());//6988
+
+        /*clockFormat(new Date());
+
+        timeLeft = (timeArr.h * 400 + timeArr.min * (400 / 60) + timeArr.s * (400 / 360)) / 100 + 'rem';
+
         var nowLeft = timeArr.h * (6988 / 24) + timeArr.min * (6988 / (24 * 60));
-        document.getElementById('gtt').scrollLeft = nowLeft + 500;
-        //document.getElementById('gtt').scrollTop=timeArr.h* (15125/24) + timeArr.min * (15125/(24*60));
-        document.getElementById('gtt').scrollTop = (15125 / 6988) * nowLeft;
+        //document.getElementById('gtt').scrollLeft = nowLeft ;
+        document.getElementById('gtt').scrollLeft = timeLeft ;
+
+        document.getElementById('gtt').scrollTop = (15125 / 6988) * nowLeft;*/
+        //console.log('111111')
+        //$('#11_03').trigger('click');
+        var timePool=[];
+        var $childEle=$('.gttZzt').children('.d1');
+        $childEle.each(function (index,item) {
+            var domTime=item.getAttribute("timeE");
+
+            timePool.push(domTime);
+            /*var time1=timeForM(domTime+'');//dom元素终点时间
+            var time2=timeForM(timeArr.h+':'+timeArr.min);//当前时间
+*/
+        });
+        timePool.push(timeArr.h+':'+timeArr.min);
+        timePool.sort();
+        var timeIndex=timePool.indexOf(timeArr.h+':'+timeArr.min)-1;
+        //console.log(timePool[timeIndex]);
+        var h=timePool[timeIndex].split(':')[0];
+        var m=timePool[timeIndex].split(':')[1];
+        $('.clickBtn').prop('href','#'+h+'_'+m);
+        document.getElementsByClassName('clickBtn')[0].click();
     };
 
 
@@ -3853,14 +3875,13 @@ $(function () {
             var domLeft1 = (timeList[i].eTimeH1 * 400 + timeList[i].eTimeM1 * (400 / 60)) / 100 + 'rem';
             var domLeft2 = (timeList[i].aTimeH1 * 400 + timeList[i].aTimeM1 * (400 / 60)) / 100 + 'rem';
             var tColor = timeList[i].tipColor;
-            //console.log(tColor)
             var domColor = '';
             if (tColor == 1) {
                 domColor = '#d21c7e'
             } else if (tColor == 0) {
                 domColor = '#b8e986'
             }
-            timeDom = timeDom + '<div timeE=\"' + timeList[i].eTimeH3 + ':' + timeList[i].eTimeM3 + '\" class=\"d1 hs child\" style=\"margin-left:' + domLeft1 + ';background-color:' + domColor + ';width: ' + eWidth + ';\"><span class="modOne01" style=\"width:' + eWidth1 + ';border-right:0.02rem solid #9c9c9c\">' + eTimeM1.toFixed(0) + '分钟 <i class="eibtW">EIBT</i><i class="eobtW">EOBT</i><i class="EIBT">' + timeList[i].eTimeH1 + ':' + timeList[i].eTimeM1 + '</i><i class="EOBT">' + timeList[i].eTimeH2 + ':' + timeList[i].eTimeM2 + '</i></span><span class="modOne02" style=\"width:' + eWidth2 + ';left: ' + eval(parseFloat(eWidth1) + 0.01) + 'rem;\"><i class="ETOT">' + timeList[i].eTimeH3 + ':' + timeList[i].eTimeM3 + '</i><i class="etotW">ETOT</i>' + eTimeM2.toFixed(0) + '分钟</span></div>'
+            timeDom = timeDom + '<div id=\"' + timeList[i].eTimeH3 + '_' + timeList[i].eTimeM3 + '\" timeE=\"' + timeList[i].eTimeH3 + ':' + timeList[i].eTimeM3 + '\" class=\"d1 hs child\" style=\"margin-left:' + domLeft1 + ';background-color:' + domColor + ';width: ' + eWidth + ';\"><span class="modOne01" style=\"width:' + eWidth1 + ';border-right:0.02rem solid #9c9c9c\">' + eTimeM1.toFixed(0) + '分钟 <i class="eibtW">EIBT</i><i class="eobtW">EOBT</i><i class="EIBT">' + timeList[i].eTimeH1 + ':' + timeList[i].eTimeM1 + '</i><i class="EOBT">' + timeList[i].eTimeH2 + ':' + timeList[i].eTimeM2 + '</i></span><span class="modOne02" style=\"width:' + eWidth2 + ';left: ' + eval(parseFloat(eWidth1) + 0.01) + 'rem;\"><i class="ETOT">' + timeList[i].eTimeH3 + ':' + timeList[i].eTimeM3 + '</i><i class="etotW">ETOT</i>' + eTimeM2.toFixed(0) + '分钟</span></div>'
                 + '<div timeE=\"' + timeList[i].aTimeH4 + ':' + timeList[i].aTimeM4 + '\" class=\"d2 bd child\" style=\"margin-left:' + domLeft2 + ';border-color:' + domColor + ';width: ' + aWidth + ';\"><span class="modTwo01" style=\"color:' + domColor + ';width:' + aWidth1 + ';border-right: 0.01rem solid ' + domColor + '\">' + aTimeM1.toFixed(0) + '分钟</span><span class="modTwo02" style=\"color:' + domColor + ';width:' + aWidth2 + ';left: ' + aWidth1 + ';border-right: 0.01rem solid ' + domColor + '\">' + aTimeM2.toFixed(0) + '分钟</span><span class="modTwo03" style=\"color:' + domColor + ';width:' + aWidth3 + ';left: ' + eval(parseFloat(aWidth1) + parseFloat(aWidth2)) + 'rem;\">' + aTimeM3.toFixed(0) + '分钟</span></div>';
         }
 
@@ -3876,20 +3897,18 @@ $(function () {
         var h=time.split(':')[0];
         var m=time.split(':')[1];
         return Number(h)*60+Number(m);
-        //return 100
     }
     var changeColor=function () {
         var $childEle=$('.gttZzt').children('.child');
         $childEle.each(function (index,item) {
             var domTime=item.getAttribute("timeE");
             var time1=timeForM(domTime+'');//dom元素终点时间
-            var time2=timeForM(timeArr.h+':'+timeArr.m);//当前时间
+            var time2=timeForM(timeArr.h+':'+timeArr.min);//当前时间
 
-            console.log(domTime)
-            //console.log(time2)
             if(time1<time2 && $(item).hasClass('d1')){
                 $(item).css('backgroundColor','#707070')
-            }else if(time1<time2 && $(item).hasClass('d2')){
+            }
+            if(time1<time2 && $(item).hasClass('d2')){
                 $(item).css({
                     'borderColor':'#707070',
                     'color':'#707070'
@@ -3900,9 +3919,6 @@ $(function () {
                 }
                 )
             }
-
-            //$(item).css('backgroundColor','#707070')
-
         })
     };
     //先执行一次
@@ -3911,18 +3927,19 @@ $(function () {
         createDom();
         timeLeft = (timeArr.h * 400 + timeArr.min * (400 / 60) + timeArr.s * (400 / 360)) / 100 + 'rem';
         $('#timeNow').css('left', timeLeft);
+        //console.log(timeLeft)
 
     }, 30);
 
 
     //30秒刷新一次
     clearInterval(timer);
-    var timeLeft;
+    var timerLeft;
     var timer = setInterval(function () {
         clockFormat(new Date());
-        //createDom();
-        timeLeft = (timeArr.h * 400 + timeArr.min * (400 / 60) + timeArr.s * (400 / 360)) / 100 + 'rem';
-        $('#timeNow').css('left', timeLeft);
+        timerLeft = (timeArr.h * 400 + timeArr.min * (400 / 60) ) / 100 + 'rem';
+        $('#timeNow').css('left', timerLeft);
+        //console.log(timeLeft);
     }, 30000);
 
 
@@ -3944,6 +3961,7 @@ $(function () {
         $('#tableTpl2').css('top', moveH);
 
     });
+
 
 
 });

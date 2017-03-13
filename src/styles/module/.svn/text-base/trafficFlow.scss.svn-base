@@ -109,7 +109,7 @@
     }
     .topLeft {
         ul {
-            margin-top: 1.4rem;
+            margin-top: 1rem;
             .jtllbg {
                 background-image: url(../../img/delayAndTraffic/jtlld.png)!important;
             }

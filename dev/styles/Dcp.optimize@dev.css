@@ -497,10 +497,10 @@ body {
 
 .showSqure .top-title .w1 {
   width: 2rem;
+  margin-right: 0.53rem;
 }
 
 .showSqure .top-title .w2 {
-  width: 2.4rem;
   margin-right: 0.53rem;
 }
 
@@ -533,7 +533,7 @@ body {
 .showSqure .opt-left {
   width: 4.27rem;
   height: 8rem;
-  padding-top: 0.6rem;
+  margin-top: -0.3rem;
   overflow: hidden;
   float: left;
 }

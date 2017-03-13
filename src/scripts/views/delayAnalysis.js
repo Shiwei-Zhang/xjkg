@@ -191,7 +191,7 @@ $(function() {
                     backgroundColor: '#0a3f5e',
                     width: '0.02rem',
                     borderRadius: '0.03rem',
-                    height: '1.3rem',
+                    height: '1rem',
                     right: '0.04rem'
                 }, {
                     backgroundColor: '#0396c2',

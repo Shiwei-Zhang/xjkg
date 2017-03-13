@@ -13,19 +13,19 @@ echartsMyself.js
 K 25
 svn:wc:ra_dav:version-url
 V 91
-/svn/tarot/!svn/ver/1332/XJDemo/zwa/src/main/webapp/xjkg/src/scripts/utils/echartsMyself.js
-END
-echarts.min.js
-K 25
-svn:wc:ra_dav:version-url
-V 89
-/svn/tarot/!svn/ver/1332/XJDemo/zwa/src/main/webapp/xjkg/src/scripts/utils/echarts.min.js
+/svn/tarot/!svn/ver/1383/XJDemo/zwa/src/main/webapp/xjkg/src/scripts/utils/echartsMyself.js
 END
 template.js
 K 25
 svn:wc:ra_dav:version-url
 V 86
 /svn/tarot/!svn/ver/1332/XJDemo/zwa/src/main/webapp/xjkg/src/scripts/utils/template.js
+END
+echarts.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/tarot/!svn/ver/1332/XJDemo/zwa/src/main/webapp/xjkg/src/scripts/utils/echarts.min.js
 END
 scrollMyself.js
 K 25

@@ -144,7 +144,7 @@ if (typeof module !== "undefined") module.exports = window.QTMPL["trafficFlowTem
 
 ;(function(__context){
     var module = {
-        id : "a4623dbc476e55d35d0f3623e0e46d6b" ,
+        id : "3202dfae1b8fc7d7e1bab83f21a31639" ,
         filename : "trafficFlow.js" ,
         exports : {}
     };
@@ -168,6 +168,7 @@ $(function() {
 	var $tableT = $('.table_title');
 	var SectorCountData = [];
 	var SegmentCount = [];
+	
 
 	function updata() {
 		//alert('updatas')
@@ -224,8 +225,8 @@ $(function() {
 			data: jsonDatab,
 			contentType: "application/x-www-form-urlencoded;",
 			success: function(data) {
-                console.log(jsonDatab)
-                console.log(data)
+				console.log(jsonDatab)
+				console.log(data)
 				var html1 = template('tableBoxTpl1', data);
 				document.getElementById('tableBox1').innerHTML = html1;
 
@@ -283,14 +284,14 @@ $(function() {
 
 	var timerb;
 	clearInterval(timerb);
-	timerb = setInterval(function(){
+	timerb = setInterval(function() {
 		updata();
-	}, 5000)
+	}, 2000)
 
 })
 
     })( module.exports , module , __context );
-    __context.____MODULES[ "a4623dbc476e55d35d0f3623e0e46d6b" ] = module.exports;
+    __context.____MODULES[ "3202dfae1b8fc7d7e1bab83f21a31639" ] = module.exports;
 })(this);
 
 
@@ -304,7 +305,7 @@ $(function() {
     var r = (function( exports , module , global ){
 
     
-__context.____MODULES['a4623dbc476e55d35d0f3623e0e46d6b'];
+__context.____MODULES['3202dfae1b8fc7d7e1bab83f21a31639'];
 
 
     })( module.exports , module , __context );

@@ -135,7 +135,12 @@ var echartsMyself = {
         // 使用刚指定的配置项和数据显示图表。
         myChart.setOption(option);
         myChart.on('click', function(params) {
-            $('select').val('')
+            $('select').val('');
+//            $('.Wdate').val('');
+            $('#startTime').val('');
+            $('#endTime').val('');
+            window.startTime = null;
+            window.endTime = null;
             if (k == 0) { //航空公司延误比例
                 var arr1 = ['CCA', 'CES', 'CXH', 'CXA', 'CNW', 'CXJ', 'CSN', 'CYH', 'CXN', 'CSC', 'CBJ', 'CSH', 'CAG', 'CGW', 'CYN', 'CWU', 'CHH', 'CGH', 'CGN', 'CSZ', 'CNJ', 'CFJ', 'CDG', 'GCR', 'CUH'];
                 var arr2 = ['CA', 'MU', 'X2', 'MF', 'WH', 'XO', 'CZ', '3Q', 'SZ', '3U', 'CJ', 'FM', 'F6', 'G8', 'Z2', 'WU', 'HU', 'G4', '2Z', 'ZH', '3W', 'IV', 'SC', 'GS', 'UQ'];

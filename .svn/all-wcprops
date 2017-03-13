@@ -45,17 +45,17 @@ svn:wc:ra_dav:version-url
 V 71
 /svn/tarot/!svn/ver/1332/XJDemo/zwa/src/main/webapp/xjkg/testecharts.js
 END
+delayAnalysis.html
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/tarot/!svn/ver/1384/XJDemo/zwa/src/main/webapp/xjkg/delayAnalysis.html
+END
 environment.yaml
 K 25
 svn:wc:ra_dav:version-url
 V 73
 /svn/tarot/!svn/ver/1332/XJDemo/zwa/src/main/webapp/xjkg/environment.yaml
-END
-delayAnalysis.html
-K 25
-svn:wc:ra_dav:version-url
-V 75
-/svn/tarot/!svn/ver/1332/XJDemo/zwa/src/main/webapp/xjkg/delayAnalysis.html
 END
 fekit.config
 K 25
@@ -67,13 +67,7 @@ runState.html
 K 25
 svn:wc:ra_dav:version-url
 V 70
-/svn/tarot/!svn/ver/1332/XJDemo/zwa/src/main/webapp/xjkg/runState.html
-END
-trafficFlow.html
-K 25
-svn:wc:ra_dav:version-url
-V 73
-/svn/tarot/!svn/ver/1371/XJDemo/zwa/src/main/webapp/xjkg/trafficFlow.html
+/svn/tarot/!svn/ver/1381/XJDemo/zwa/src/main/webapp/xjkg/runState.html
 END
 tc.html
 K 25
@@ -81,17 +75,23 @@ svn:wc:ra_dav:version-url
 V 64
 /svn/tarot/!svn/ver/1332/XJDemo/zwa/src/main/webapp/xjkg/tc.html
 END
-jquery-3.1.1.min.js
+trafficFlow.html
 K 25
 svn:wc:ra_dav:version-url
-V 76
-/svn/tarot/!svn/ver/1332/XJDemo/zwa/src/main/webapp/xjkg/jquery-3.1.1.min.js
+V 73
+/svn/tarot/!svn/ver/1384/XJDemo/zwa/src/main/webapp/xjkg/trafficFlow.html
 END
 index.html
 K 25
 svn:wc:ra_dav:version-url
 V 67
 /svn/tarot/!svn/ver/1332/XJDemo/zwa/src/main/webapp/xjkg/index.html
+END
+jquery-3.1.1.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/tarot/!svn/ver/1332/XJDemo/zwa/src/main/webapp/xjkg/jquery-3.1.1.min.js
 END
 getBaseRouteReally.json
 K 25
