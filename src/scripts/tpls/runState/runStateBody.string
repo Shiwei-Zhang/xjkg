@@ -5,6 +5,17 @@
             </div>
             <div class="rightBox">
 
+                <!--<div class="stateBtn">默认</div>-->
+                <!--<div class="baseLine">-->
+                    <!--<ul class="lineBox">-->
+                        <!--<li></li>-->
+                        <!--<li></li>-->
+                        <!--<li></li>-->
+                        <!--<li></li>-->
+                        <!--<li></li>-->
+
+                    <!--</ul>-->
+                <!--</div>-->
                 <div class="airList">
                     <div id="tableTpl2">
                         <!-- <ul>

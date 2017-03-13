@@ -3939,7 +3939,6 @@ $(function () {
         clockFormat(new Date());
         timerLeft = (timeArr.h * 400 + timeArr.min * (400 / 60) ) / 100 + 'rem';
         $('#timeNow').css('left', timerLeft);
-        //console.log(timeLeft);
     }, 30000);
 
 
@@ -3959,9 +3958,23 @@ $(function () {
         var moveH = -$(this).scrollTop();
         $('#timeBox ul').css('left', moveL);
         $('#tableTpl2').css('top', moveH);
-
+        /*$('.stateBtn').css({
+            'color':'#2bede6'
+        }).html('跟随')*/
     });
+    
+    //跟随
+    /*var follow=function () {
+        var timer=null;
+        clearInterval(timer);
+        setInterval(function () {
+            positionNow();
+        },500)
+    }
 
-
+    $('.stateBtn').unbind('click').on('click',function () {
+        $(this).html('默认');
+        follow();
+    })*/
 
 });
